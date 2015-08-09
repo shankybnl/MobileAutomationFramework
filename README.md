@@ -1,7 +1,5 @@
 # MobileAutomationFramework
 
-
-
 **Package : UITestFramework** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
 ![image](UIAutomation/images/1.png)
@@ -95,10 +93,10 @@ runtime of the helper classes required in the test. Object creation happens depe
 
 
 
-<h3>Javadoc of the project can be found in doc folder. It contains information all classes and methods.<h3>
+###Javadoc of the project can be found in doc folder. It contains information all classes and methods.
 
 
-<h1>Execution flow of a Test<h1>
+#Execution flow of a Test
 
 Below is execution flow with help of login test as example.
 
@@ -149,7 +147,7 @@ IOSLoginHelper would be under iOS -> IOSLoginHelper.
 Similar thing should be done for element locators. There is no base folder in case of screens.For android locators, it would be under screens->android->AndroidLoginScreen. 
 For iOS locators,  it would be under screens->ios->IOSLoginScreen. 
 
-<h1>How to execute a test<h1>
+#How to execute a test
 
 Ant is used as build tool (can be downloaded from here). build.xml file is present in base directory and have targets to android and iOS Test.
 
@@ -157,14 +155,14 @@ Connect your device to your machine or start the emulator.
 
 *Note: start appium server on your machine if not included programatically *
 
-<h6>Run below commands to execute android test:<h6>
+######Run below commands to execute android test:
 
 $ cd UIAutomation/
 $ ant executeAndroidTest 
 
 Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginHelper. Now you are ready to run below commands.
 
-<h6>Run below commands to execute iOS test:<h6>
+######Run below commands to execute iOS test:
 
 $ cd UIAutomation/
 $ ant executeAndroidTest 
