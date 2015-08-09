@@ -153,17 +153,17 @@ Ant is used as build tool (can be downloaded from here). build.xml file is prese
 
 Connect your device to your machine or start the emulator.
 
-*Note: start appium server on your machine if not included programatically *
+*Note: start appium server on your machine if not included programatically*
 
 ######Run below commands to execute android test:
 
 $ cd UIAutomation/
 $ ant executeAndroidTest 
 
-Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginHelper. Now you are ready to run below commands.
+*Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginHelper. Now you are ready to run below commands.*
 
 ######Run below commands to execute iOS test:
 
 $ cd UIAutomation/
-$ ant executeAndroidTest 
+$ ant executeiOSTest 
 
