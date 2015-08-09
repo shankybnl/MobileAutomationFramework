@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="53767" started-at="2015-08-09T13:12:30Z" finished-at="2015-08-09T13:13:23Z">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="53767" started-at="2015-08-09T13:12:30Z" finished-at="2015-08-09T13:13:23Z">
+      <class name="IntegrationTests.Tests.LoginTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String, java.lang.reflect.Method)[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="createDriver" is-config="true" duration-ms="18772" started-at="2015-08-09T18:42:30Z" finished-at="2015-08-09T18:42:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void IntegrationTests.Tests.LoginTest.LoginVerification() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="instantiateHelpers" is-config="true" duration-ms="7" started-at="2015-08-09T18:42:48Z" finished-at="2015-08-09T18:42:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="LoginVerification()[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="LoginVerification" duration-ms="33852" started-at="2015-08-09T18:42:48Z" finished-at="2015-08-09T18:43:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerification -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="teardown" is-config="true" duration-ms="1121" started-at="2015-08-09T18:43:22Z" finished-at="2015-08-09T18:43:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.Tests.LoginTest -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>

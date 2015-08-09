@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="4" started-at="2015-04-15T07:46:55Z" finished-at="2015-04-15T07:46:55Z">
+    <groups>
+    </groups>
+    <test name="Mobikwik Automation Tests" duration-ms="4" started-at="2015-04-15T07:46:55Z" finished-at="2015-04-15T07:46:55Z">
+    </test> <!-- Mobikwik Automation Tests -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>

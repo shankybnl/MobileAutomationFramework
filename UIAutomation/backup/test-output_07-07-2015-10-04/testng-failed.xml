@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Appium-Framework]">
+  <parameter name="build" value="stag"/>
+  <parameter name="level" value="payments"/>
+  <parameter name="invokeDriver" value="android"/>
+  <listeners>
+    <listener class-name="UITestFramework.retryLogic.RetryListener"/>
+  </listeners>
+  <test name="Mobikwik Automation Tests(failed)">
+    <groups>
+      <run>
+        <include name="appiumStart"/>
+        <include name="setUp"/>
+        <include name="instantiateHelpers"/>
+        <include name="sanity"/>
+        <include name="tearDown"/>
+        <include name="appiumStop"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="IntegrationTests.Tests.Payments.MyaccountTest">
+        <methods>
+          <include name="checkFeatures"/>
+          <include name="checkMyaccount"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.MyaccountTest -->
+      <class name="IntegrationTests.Tests.Payments.SendMoneyTest">
+        <methods>
+          <include name="verifySendMoneyCases_viaSelfEmail"/>
+          <include name="verifySendMoneyCases_insufficientWalletAmount_viaContacts"/>
+          <include name="verifySendMoneyCases_viaSelfMobile"/>
+          <include name="verifySendMoneyCases_viaContacts_Cancels"/>
+          <include name="verifySendMoneyCases_equalsZero_viaContacts"/>
+          <include name="verifySendMoneyCases_viaEmail_Accepts"/>
+          <include name="verifySendMoneyCases_viaMobile_Declines"/>
+          <include name="verifySendMoneyCases_invalidAmount_viaMobile"/>
+          <include name="verifySendMoneyCases_userLoggedout"/>
+          <include name="verifySendMoneyCases_validAmount_viaMobile"/>
+          <include name="verifySendMoneyCases_viaEmail_Cancels"/>
+          <include name="verifySendMoneyCases_viaNon_existingMobile"/>
+          <include name="verifySendMoneyCases_viaContacts_Accepts"/>
+          <include name="verifySendMoneyCases_invalidAmount_viaEmail"/>
+          <include name="verifySendMoneyCases_invalidAmount_viaContacts"/>
+          <include name="verifySendMoneyCases_validAmount_viaContacts"/>
+          <include name="verifySendMoneyCases_viaNon_existingEmail"/>
+          <include name="verifySendMoneyCases_validAmount_viaEmail"/>
+          <include name="verifySendMoneyCases_viaInvalidEmail"/>
+          <include name="verifySendMoneyCases_insufficientWalletAmount_viaMobile"/>
+          <include name="verifySendMoneyCases_equalsZero_viaEmail"/>
+          <include name="verifySendMoneyCases_insufficientWalletAmount_viaEmail"/>
+          <include name="verifySendMoneyCases_equalsZero_viaMobile"/>
+          <include name="verifySendMoneyCases_viaInvalidMobile"/>
+          <include name="verifySendMoneyCases_viaMobile_Cancels"/>
+          <include name="teardown"/>
+          <include name="verifySendMoneyCases_viaMobile_Accepts"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.SendMoneyTest -->
+      <class name="IntegrationTests.Tests.Payments.LoginTest">
+        <methods>
+          <include name="verifyLoginLogoutTest"/>
+          <include name="verifyForgotPasswordTest"/>
+          <include name="verifyInvalidLoginTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.LoginTest -->
+      <class name="IntegrationTests.Tests.Payments.MiscellaneousTest">
+        <methods>
+          <include name="verifyNotification"/>
+          <include name="verify_AboutUs"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.MiscellaneousTest -->
+      <class name="IntegrationTests.Tests.Payments.CashpickupTest">
+        <methods>
+          <include name="loggedoutCashpickup"/>
+          <include name="getCashpickup"/>
+          <include name="locationserviceEnable"/>
+          <include name="locationserviceDisabled"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.CashpickupTest -->
+      <class name="IntegrationTests.Tests.Payments.AddMoneyTest">
+        <methods>
+          <include name="verifyAddMoneywithPromo_creditCard"/>
+          <include name="verifyAddMoneywithPromo_debitCard"/>
+          <include name="verifyAddMoneywithPromo_savedCard"/>
+          <include name="verifyAddMoney_netBanking"/>
+          <include name="verifymore_AddMoney"/>
+          <include name="verifyAddMoney_debitCard"/>
+          <include name="verifyAddMoney_creditCard"/>
+          <include name="verifyAddMoney_savedCard"/>
+          <include name="verifyEmpty_AddMoney"/>
+          <include name="verifyAddMoney_deleteCard"/>
+          <include name="verifyless_AddMoney"/>
+          <include name="verifyAddMoney_creditCard2"/>
+          <include name="verifyAddMoney_debitCard2"/>
+          <include name="verifyAddMoney_debitCard3"/>
+          <include name="verifyAddMoney_maxLimitPromo"/>
+          <include name="verifyAddMoney_netBanking2"/>
+          <include name="verifyAddMoney_netBanking3"/>
+          <include name="teardown"/>
+          <include name="verifyAddMoney_creditCard3"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.AddMoneyTest -->
+      <class name="IntegrationTests.Tests.Payments.SavedConnectionsTest">
+        <methods>
+          <include name="verifySavedConnectionsFeatures"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.SavedConnectionsTest -->
+      <class name="IntegrationTests.Tests.Payments.SecurityTest">
+        <methods>
+          <include name="enablePIN"/>
+          <include name="verifyRemoteWipe"/>
+          <include name="verify_disablePinPayment"/>
+          <include name="verify_enablePinPayment"/>
+          <include name="disablePIN"/>
+          <include name="enablePIN_contacts"/>
+          <include name="invalid_incorrectPIN"/>
+          <include name="verify_forgotPassword_Recharges"/>
+          <include name="changing_PIN"/>
+          <include name="teardown"/>
+          <include name="forgot_Pin"/>
+          <include name="verify_invalidPin"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.SecurityTest -->
+      <class name="IntegrationTests.Tests.Payments.HomeScreenTest">
+        <methods>
+          <include name="condition_NonLoggedIn"/>
+          <include name="condition_LoggedIn"/>
+          <include name="teardown"/>
+          <include name="verifyWalletOffers_HomeScreen"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.HomeScreenTest -->
+      <class name="IntegrationTests.Tests.Payments.CashPayTest">
+        <methods>
+          <include name="cashPay_CashPayAmount_maxOrders"/>
+          <include name="cashPay_ZeroAmount"/>
+          <include name="cashPay_UserLoggedOut"/>
+          <include name="cashPay_CashPayAmount_PendingTransaction"/>
+          <include name="cashPay_exceedAmount"/>
+          <include name="cashPay_LoggedOut"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.CashPayTest -->
+      <class name="IntegrationTests.Tests.Payments.ImpsTest">
+        <methods>
+          <include name="checkImps"/>
+          <include name="checkImpsFields"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.ImpsTest -->
+      <class name="IntegrationTests.Tests.Payments.Refer_EarnTest">
+        <methods>
+          <include name="verify_refer_earnSendMoneyCancel"/>
+          <include name="refer_earnAmount"/>
+          <include name="verify_refer_earnVisibility"/>
+          <include name="verify_refer_earnInVisibilityLoggedOut"/>
+          <include name="verify_refer_earnSendMoney_multipleUsers"/>
+          <include name="verify_refer_earnSendMoneyAccept"/>
+          <include name="teardown"/>
+          <include name="verify_refer_earnInVisibility"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.Refer_EarnTest -->
+      <class name="IntegrationTests.Tests.Payments.HelpTest">
+        <methods>
+          <include name="checkFeatures"/>
+          <include name="check_unresolvedtopquestions"/>
+          <include name="verifying_CategoryResolved"/>
+          <include name="check_otherfeature"/>
+          <include name="check_UserLoggedout_ReolvedQuery"/>
+          <include name="check_ReolvedQuery"/>
+          <include name="verifying_CategoryResolved_userLoggedOut"/>
+          <include name="check_viewtopsolutions"/>
+          <include name="verifying_CategoryUnresolved"/>
+          <include name="check_userLoggedOut"/>
+          <include name="check_resolvedtopquestions"/>
+          <include name="verifying_FAQ_Categories"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.HelpTest -->
+      <class name="IntegrationTests.Tests.Payments.PaybackTest">
+        <methods>
+          <include name="payback_RedeemAllPoints"/>
+          <include name="payback_RedeemLimitedPoints"/>
+          <include name="payback_RedeemZeroPoints"/>
+          <include name="payback_checkNotification"/>
+          <include name="teardown"/>
+          <include name="payback_checkNotificationLoggedOut"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.PaybackTest -->
+      <class name="IntegrationTests.Tests.Payments.RequestMoneyTest">
+        <methods>
+          <include name="verifyRequestMoneyCases_viaInvalidMobile"/>
+          <include name="verifyRequestMoneyCases_topupLimitReached_viaMobile"/>
+          <include name="verifyRequestMoneyCases_topupLimitReached_viaContacts"/>
+          <include name="verifyRequestMoneyCases_validAmount_viaEmail"/>
+          <include name="verifyRequestMoneyCases_viaContacts_Accepts"/>
+          <include name="verifySendMoneyCases_topupLimitReached_viaEmail"/>
+          <include name="verifyRequestMoneyCases_invalidAmount_viaMobile"/>
+          <include name="verifyRequestMoneyCases_invalidAmount_viaContacts"/>
+          <include name="verifyRequestMoneyCases_viaMobile_Accepts"/>
+          <include name="verifyRequestMoneyCases_viaNon_existingMobile"/>
+          <include name="verifyRequestMoneyCases_userLoggedout"/>
+          <include name="verifyRequestMoneyCases_validAmount_viaMobile"/>
+          <include name="verifyRequestMoneyCases_validAmount_viaContacts"/>
+          <include name="verifyRequestMoneyCases_viaContacts_Cancels"/>
+          <include name="verifyRequestMoneyCases_viaMobile_Cancels"/>
+          <include name="verifyRequestMoneyCases_viaSelfMobile"/>
+          <include name="verifyRequestMoneyCases_viaNon_existingEmail"/>
+          <include name="verifyRequestMoneyCases_viaEmail_Cancels"/>
+          <include name="verifyRequestMoneyCases_viaEmail_Accepts"/>
+          <include name="verifyRequestMoneyCases_viaSelfEmail"/>
+          <include name="verifyRequestMoneyCases_equalsZero_viaEmail"/>
+          <include name="verifyRequestMoneyCases_equalsZero_viaContacts"/>
+          <include name="verifyRequestMoneyCases_viaInvalidEmail"/>
+          <include name="verifyRequestMoneyCases_equalsZero_viaMobile"/>
+          <include name="verifyRequestMoneyCases_invalidAmount_viaEmail"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.RequestMoneyTest -->
+    </classes>
+  </test> <!-- Mobikwik Automation Tests(failed) -->
+</suite> <!-- Failed suite [Appium-Framework] -->

@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>TestNG:  Mobikwik Automation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Mobikwik Automation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 11 16:45:15 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>133 seconds (133487 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>appiumStart appiumStop setUp sanity instantiateHelpers tearDown </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures()'><b>verifySavedConnectionsFeatures</b><br>Test class: IntegrationTests.Tests.Payments.SavedConnectionsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.99 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 1d4c4b9e-4227-4e9f-b5b8-32fa33728a0d
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(&quot;123&quot;).instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(&quot;123&quot;).instance(0));}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at UITestFramework.MobiKwikScreen.scrollTo(MobiKwikScreen.java:348)
+	at IntegrationTests.Payments.helpers.android.AndroidHomeHelper.savedConnectionsScreen(AndroidHomeHelper.java:53)
+	at IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures(SavedConnectionsTest.java:67)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1190820921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1190820921'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.99 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 1d4c4b9e-4227-4e9f-b5b8-32fa33728a0d
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(&quot;123&quot;).instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(&quot;123&quot;).instance(0));}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at UITestFramework.MobiKwikScreen.scrollTo(MobiKwikScreen.java:348)
+	at IntegrationTests.Payments.helpers.android.AndroidHomeHelper.savedConnectionsScreen(AndroidHomeHelper.java:53)
+	at IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures(SavedConnectionsTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>43</td>
+<td>IntegrationTests.Tests.Payments.SavedConnectionsTest@3d8c7aca</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures()'><b>verifySavedConnectionsFeatures</b><br>Test class: IntegrationTests.Tests.Payments.SavedConnectionsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 75715969-154d-48de-900e-cba682e8389a
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(&quot;123&quot;).instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(&quot;123&quot;).instance(0));}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at UITestFramework.MobiKwikScreen.scrollTo(MobiKwikScreen.java:348)
+	at IntegrationTests.Payments.helpers.android.AndroidHomeHelper.savedConnectionsScreen(AndroidHomeHelper.java:53)
+	at IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures(SavedConnectionsTest.java:67)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace236840983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236840983'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=/home/shanky/tests/AutomationTests/UIAutomation/src/app/Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 75715969-154d-48de-900e-cba682e8389a
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(&quot;123&quot;).instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(&quot;123&quot;).instance(0));}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.11.0-26-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at UITestFramework.MobiKwikScreen.scrollTo(MobiKwikScreen.java:348)
+	at IntegrationTests.Payments.helpers.android.AndroidHomeHelper.savedConnectionsScreen(AndroidHomeHelper.java:53)
+	at IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures(SavedConnectionsTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>66</td>
+<td>IntegrationTests.Tests.Payments.SavedConnectionsTest@3d8c7aca</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Login verification]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Login verification]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Logout verification]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Verify invalid Login scenario]]>
+    </line>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="269791" started-at="2015-04-22T05:01:46Z" finished-at="2015-04-22T05:06:15Z">
+    <groups>
+      <group name="sanity">
+        <method signature="LoginTest.verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyInvalidLoginTest" class="IntegrationTests.tests.payments.LoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyLoginLogoutTest" class="IntegrationTests.tests.payments.LoginTest"/>
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@59a6e353]" name="verifySavedConnectionsFeatures" class="IntegrationTests.tests.payments.SavedConnectionsTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Mobikwik Automation Tests" duration-ms="269791" started-at="2015-04-22T05:01:46Z" finished-at="2015-04-22T05:06:15Z">
+      <class name="IntegrationTests.tests.payments.LoginTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="createDriver" is-config="true" duration-ms="11363" started-at="2015-04-22T10:34:11Z" finished-at="2015-04-22T10:34:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="instantiateHelpers" is-config="true" duration-ms="1" started-at="2015-04-22T10:34:22Z" finished-at="2015-04-22T10:34:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyLoginLogoutTest" duration-ms="47533" started-at="2015-04-22T10:34:22Z" finished-at="2015-04-22T10:35:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Login verification]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Logout verification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLogoutTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="teardown" is-config="true" duration-ms="988" started-at="2015-04-22T10:35:10Z" finished-at="2015-04-22T10:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="createDriver" is-config="true" duration-ms="11772" started-at="2015-04-22T10:35:11Z" finished-at="2015-04-22T10:35:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-22T10:35:23Z" finished-at="2015-04-22T10:35:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyInvalidLoginTest" duration-ms="51771" started-at="2015-04-22T10:35:23Z" finished-at="2015-04-22T10:36:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Verify invalid Login scenario]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLoginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="teardown" is-config="true" duration-ms="1031" started-at="2015-04-22T10:36:14Z" finished-at="2015-04-22T10:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.payments.LoginTest -->
+      <class name="IntegrationTests.tests.payments.SavedConnectionsTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@59a6e353]" name="createDriver" is-config="true" duration-ms="11848" started-at="2015-04-22T10:31:46Z" finished-at="2015-04-22T10:31:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@59a6e353]" name="instantiateHelpers" is-config="true" duration-ms="8" started-at="2015-04-22T10:31:57Z" finished-at="2015-04-22T10:31:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@59a6e353]" name="verifySavedConnectionsFeatures" duration-ms="132272" started-at="2015-04-22T10:31:57Z" finished-at="2015-04-22T10:34:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Login verification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySavedConnectionsFeatures -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@59a6e353]" name="teardown" is-config="true" duration-ms="1185" started-at="2015-04-22T10:34:10Z" finished-at="2015-04-22T10:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.payments.SavedConnectionsTest -->
+    </test> <!-- Mobikwik Automation Tests -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>

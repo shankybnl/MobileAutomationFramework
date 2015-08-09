@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Verify invalid Login scenario]]>
+    </line>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="48898" started-at="2015-04-22T04:55:24Z" finished-at="2015-04-22T04:56:13Z">
+    <groups>
+      <group name="sanity">
+        <method signature="InvalidLoginTest.verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.InvalidLoginTest@6442b0a6]" name="verifyInvalidLoginTest" class="IntegrationTests.tests.payments.InvalidLoginTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Mobikwik Automation Tests" duration-ms="48898" started-at="2015-04-22T04:55:24Z" finished-at="2015-04-22T04:56:13Z">
+      <class name="IntegrationTests.tests.payments.InvalidLoginTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.InvalidLoginTest@6442b0a6]" name="createDriver" is-config="true" duration-ms="12274" started-at="2015-04-22T10:25:24Z" finished-at="2015-04-22T10:25:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.InvalidLoginTest@6442b0a6]" name="instantiateHelpers" is-config="true" duration-ms="5" started-at="2015-04-22T10:25:37Z" finished-at="2015-04-22T10:25:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.InvalidLoginTest@6442b0a6]" name="verifyInvalidLoginTest" duration-ms="35583" started-at="2015-04-22T10:25:37Z" finished-at="2015-04-22T10:26:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Verify invalid Login scenario]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLoginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.InvalidLoginTest@6442b0a6]" name="teardown" is-config="true" duration-ms="1020" started-at="2015-04-22T10:26:12Z" finished-at="2015-04-22T10:26:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.payments.InvalidLoginTest -->
+    </test> <!-- Mobikwik Automation Tests -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>

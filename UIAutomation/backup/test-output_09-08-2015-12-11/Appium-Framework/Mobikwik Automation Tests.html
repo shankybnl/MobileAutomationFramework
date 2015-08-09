@@ -1,0 +1,1124 @@
+<html>
+<head>
+<title>TestNG:  Mobikwik Automation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Mobikwik Automation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/19</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 08 21:41:01 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1434 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>appiumStart appiumStop setUp prod_sanity instantiateHelpers tearDown </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.PaybackTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.PaybackTest<br>Parameters: iOS, prod, payments, false, public void IntegrationTests.Tests.Payments.PaybackTest.payback_RedeemZeroPoints() throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not get the iOS SDK version because the Xcode version could not be determined.) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 757 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-55-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:109)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:23)
+	at UITestFramework.CreateSession.iOSDriver(CreateSession.java:242)
+	at UITestFramework.CreateSession.createDriver(CreateSession.java:147)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1346201722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1346201722'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not get the iOS SDK version because the Xcode version could not be determined.) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 757 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;shanky-Lenovo-B40-70&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-55-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:109)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:23)
+	at UITestFramework.CreateSession.iOSDriver(CreateSession.java:242)
+	at UITestFramework.CreateSession.createDriver(CreateSession.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.PaybackTest@531be3c5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.PaybackTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.PaybackTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1149377174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1149377174'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.PaybackTest@531be3c5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace482052083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace482052083'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810742349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810742349'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1068586139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1068586139'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SavedConnectionsTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.SavedConnectionsTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671507048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671507048'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SavedConnectionsTest@50f8360d</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1006227006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1006227006'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace900636745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace900636745'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636050357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636050357'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace455785638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace455785638'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977552154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977552154'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2074820378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2074820378'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1267655902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1267655902'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424082571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1424082571'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1466785259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1466785259'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.Refer_EarnTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.Refer_EarnTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252277567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252277567'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.Refer_EarnTest@9f70c54</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace42544488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace42544488'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1852777344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1852777344'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.HomeScreenTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.HomeScreenTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658532887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658532887'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.HomeScreenTest@2c9f9fb0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.CashPayTest.teardown()'><b>teardown</b><br>Test class: IntegrationTests.Tests.Payments.CashPayTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1715248762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1715248762'><pre>java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(CreateSession.java:164)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.CashPayTest@13c78c0b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.PaybackTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.PaybackTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.PaybackTest@531be3c5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SavedConnectionsTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.SavedConnectionsTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SavedConnectionsTest@50f8360d</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SavedConnectionsTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.SavedConnectionsTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SavedConnectionsTest@50f8360d</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.Refer_EarnTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.Refer_EarnTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.Refer_EarnTest@9f70c54</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.Refer_EarnTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.Refer_EarnTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.Refer_EarnTest@9f70c54</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.HomeScreenTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.HomeScreenTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.HomeScreenTest@2c9f9fb0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.HomeScreenTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.HomeScreenTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.HomeScreenTest@2c9f9fb0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.CashPayTest.createDriver()'><b>createDriver</b><br>Test class: IntegrationTests.Tests.Payments.CashPayTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.CashPayTest@13c78c0b</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.CashPayTest.instantiateHelpers()'><b>instantiateHelpers</b><br>Test class: IntegrationTests.Tests.Payments.CashPayTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.CashPayTest@13c78c0b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.CashPayTest.cashPay_StaticText()'><b>cashPay_StaticText</b><br>Test class: IntegrationTests.Tests.Payments.CashPayTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.CashPayTest@13c78c0b</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.PaybackTest.payback_RedeemZeroPoints()'><b>payback_RedeemZeroPoints</b><br>Test class: IntegrationTests.Tests.Payments.PaybackTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.PaybackTest@531be3c5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.Refer_EarnTest.refer_earnAmount()'><b>refer_earnAmount</b><br>Test class: IntegrationTests.Tests.Payments.Refer_EarnTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.Refer_EarnTest@9f70c54</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.verifyAddMoney_debitCard()'><b>verifyAddMoney_debitCard</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.verifyAddMoney_debitCard2()'><b>verifyAddMoney_debitCard2</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.verifyAddMoney_deleteCard()'><b>verifyAddMoney_deleteCard</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.verifyAddMoney_netBanking3()'><b>verifyAddMoney_netBanking3</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.verifyAddMoney_savedCard()'><b>verifyAddMoney_savedCard</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.AddMoneyTest.verifyAddMoneywithPromo_debitCard()'><b>verifyAddMoneywithPromo_debitCard</b><br>Test class: IntegrationTests.Tests.Payments.AddMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.AddMoneyTest@617c74e5</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.verifyForgotPasswordTest()'><b>verifyForgotPasswordTest</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.LoginTest.verifyLoginLogoutTest()'><b>verifyLoginLogoutTest</b><br>Test class: IntegrationTests.Tests.Payments.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.LoginTest@737996a0</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.verifyRequestMoneyCases_validAmount_viaMobile()'><b>verifyRequestMoneyCases_validAmount_viaMobile</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Accepts()'><b>verifyRequestMoneyCases_viaMobile_Accepts</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Cancels()'><b>verifyRequestMoneyCases_viaMobile_Cancels</b><br>Test class: IntegrationTests.Tests.Payments.RequestMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.RequestMoneyTest@97e1986</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SavedConnectionsTest.verifySavedConnectionsFeatures()'><b>verifySavedConnectionsFeatures</b><br>Test class: IntegrationTests.Tests.Payments.SavedConnectionsTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SavedConnectionsTest@50f8360d</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.verifySendMoneyCases_validAmount_viaContacts()'><b>verifySendMoneyCases_validAmount_viaContacts</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.verifySendMoneyCases_validAmount_viaMobile()'><b>verifySendMoneyCases_validAmount_viaMobile</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.SendMoneyTest.verifySendMoneyCases_viaMobile_Accepts()'><b>verifySendMoneyCases_viaMobile_Accepts</b><br>Test class: IntegrationTests.Tests.Payments.SendMoneyTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.SendMoneyTest@69d9c55</td></tr>
+<tr>
+<td title='IntegrationTests.Tests.Payments.HomeScreenTest.verifyWalletOffers_HomeScreen()'><b>verifyWalletOffers_HomeScreen</b><br>Test class: IntegrationTests.Tests.Payments.HomeScreenTest</td>
+<td></td>
+<td>0</td>
+<td>IntegrationTests.Tests.Payments.HomeScreenTest@2c9f9fb0</td></tr>
+</table><p>
+</body>
+</html>

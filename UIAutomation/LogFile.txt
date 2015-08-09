@@ -1,0 +1,12 @@
+09 Aug 2015 17:47:52  INFO logger - --------------------------------------
+09 Aug 2015 17:48:06  INFO logger - Android driver created
+09 Aug 2015 17:48:06  INFO logger - Running login test
+09 Aug 2015 17:48:47  INFO logger - Login Successful
+09 Aug 2015 17:48:47  INFO logger - Verified the login
+09 Aug 2015 17:48:47  INFO logger - Shutting down driver
+09 Aug 2015 18:42:30  INFO logger - --------------------------------------
+09 Aug 2015 18:42:48  INFO logger - Android driver created
+09 Aug 2015 18:42:48  INFO logger - Running login test
+09 Aug 2015 18:43:22  INFO logger - Login Successful
+09 Aug 2015 18:43:22  INFO logger - Verified the login
+09 Aug 2015 18:43:22  INFO logger - Shutting down driver

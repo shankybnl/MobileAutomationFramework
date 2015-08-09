@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Appium-Framework]">
+  <parameter name="invokeDriver" value="android"/>
+  <test name="Mobikwik Automation Tests(failed)">
+    <groups>
+      <run>
+        <include name="appiumStart"/>
+        <include name="setUp"/>
+        <include name="instantiateHelpers"/>
+        <include name="sanity"/>
+        <include name="tearDown"/>
+        <include name="appiumStop"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="IntegrationTests.tests.SavedConnectionsTest">
+        <methods>
+          <include name="verifySavedConnectionsFeatures"/>
+          <include name="createDriver"/>
+          <include name="instantiateHelpers"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.tests.SavedConnectionsTest -->
+      <class name="IntegrationTests.tests.InvalidLoginTest">
+        <methods>
+          <include name="createDriver"/>
+          <include name="instantiateHelpers"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.tests.InvalidLoginTest -->
+    </classes>
+  </test> <!-- Mobikwik Automation Tests(failed) -->
+</suite> <!-- Failed suite [Appium-Framework] -->

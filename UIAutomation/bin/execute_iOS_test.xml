@@ -1,0 +1,16 @@
+<suite name="Appium-Framework">
+	
+	<listeners>
+		<listener class-name="UITestFramework.retryLogic.RetryListener" />
+		<listener class-name="UITestFramework.retryLogic.TestListener" />
+	</listeners>
+
+		<parameter name="invokeDriver" value="iOS" />
+
+	
+	<test name="LoginTest">
+		<classes>
+			<class name="IntegrationTests.Tests.LoginTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Appium-Framework">
+              <span class="suite-name border-skipped">Appium-Framework</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Appium-Framework">
+                    <span>testng_android_payments.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Appium-Framework">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Appium-Framework">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Appium-Framework">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Appium-Framework">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Appium-Framework">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Appium-Framework">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,  12 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Appium-Framework" class="hide-methods skipped suite-Appium-Framework"> (hide)</a> <!-- hide-methods skipped suite-Appium-Framework -->
+                      <a href="#" panel-name="suite-Appium-Framework" class="show-methods skipped suite-Appium-Framework"> (show)</a> <!-- show-methods skipped suite-Appium-Framework -->
+                    </span>
+                    <div class="method-list-content skipped suite-Appium-Framework">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoney_creditCard">verifyAddMoney_creditCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoney_debitCard">verifyAddMoney_debitCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoney_deleteCard">verifyAddMoney_deleteCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoney_maxLimitPromo">verifyAddMoney_maxLimitPromo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoney_netBanking">verifyAddMoney_netBanking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoney_savedCard">verifyAddMoney_savedCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoneywithPromo_creditCard">verifyAddMoneywithPromo_creditCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoneywithPromo_debitCard">verifyAddMoneywithPromo_debitCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyAddMoneywithPromo_savedCard">verifyAddMoneywithPromo_savedCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyEmpty_AddMoney">verifyEmpty_AddMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifyless_AddMoney">verifyless_AddMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.Payments.AddMoneyTest" hash-for-method="verifymore_AddMoney">verifymore_AddMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Appium-Framework -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Appium-Framework" class="panel Appium-Framework">
+          <div class="suite-Appium-Framework-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">IntegrationTests.Tests.Payments.AddMoneyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoney_creditCard">
+                  </a> <!-- verifyAddMoney_creditCard -->
+                  <span class="method-name">verifyAddMoney_creditCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoney_debitCard">
+                  </a> <!-- verifyAddMoney_debitCard -->
+                  <span class="method-name">verifyAddMoney_debitCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoney_deleteCard">
+                  </a> <!-- verifyAddMoney_deleteCard -->
+                  <span class="method-name">verifyAddMoney_deleteCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoney_maxLimitPromo">
+                  </a> <!-- verifyAddMoney_maxLimitPromo -->
+                  <span class="method-name">verifyAddMoney_maxLimitPromo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoney_netBanking">
+                  </a> <!-- verifyAddMoney_netBanking -->
+                  <span class="method-name">verifyAddMoney_netBanking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoney_savedCard">
+                  </a> <!-- verifyAddMoney_savedCard -->
+                  <span class="method-name">verifyAddMoney_savedCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoneywithPromo_creditCard">
+                  </a> <!-- verifyAddMoneywithPromo_creditCard -->
+                  <span class="method-name">verifyAddMoneywithPromo_creditCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoneywithPromo_debitCard">
+                  </a> <!-- verifyAddMoneywithPromo_debitCard -->
+                  <span class="method-name">verifyAddMoneywithPromo_debitCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddMoneywithPromo_savedCard">
+                  </a> <!-- verifyAddMoneywithPromo_savedCard -->
+                  <span class="method-name">verifyAddMoneywithPromo_savedCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEmpty_AddMoney">
+                  </a> <!-- verifyEmpty_AddMoney -->
+                  <span class="method-name">verifyEmpty_AddMoney</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyless_AddMoney">
+                  </a> <!-- verifyless_AddMoney -->
+                  <span class="method-name">verifyless_AddMoney</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymore_AddMoney">
+                  </a> <!-- verifymore_AddMoney -->
+                  <span class="method-name">verifymore_AddMoney</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Appium-Framework-class-skipped -->
+        </div> <!-- panel Appium-Framework -->
+        <div panel-name="test-xml-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/shanky/tests/AutomationTests/UIAutomation/TestNg/Payments/testng_android_payments.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Appium-Framework&quot;&gt;
+  &lt;parameter name=&quot;build&quot; value=&quot;stag&quot;/&gt;
+  &lt;parameter name=&quot;invokeDriver&quot; value=&quot;android&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;UITestFramework.retryLogic.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Mobikwik Automation Tests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;appiumStart&quot;/&gt;
+        &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;include name=&quot;instantiateHelpers&quot;/&gt;
+        &lt;include name=&quot;android_payments&quot;/&gt;
+        &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;include name=&quot;appiumStop&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;IntegrationTests.Tests.Payments&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;UITestFramework.CreateSession&quot;/&gt;
+      &lt;class name=&quot;IntegrationTests.Tests.Payments.SendMoneyTest&quot;/&gt;
+      &lt;class name=&quot;IntegrationTests.Tests.Payments.SavedConnectionsTest&quot;/&gt;
+      &lt;class name=&quot;IntegrationTests.Tests.Payments.AddMoneyTest&quot;/&gt;
+      &lt;class name=&quot;IntegrationTests.Tests.Payments.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Mobikwik Automation Tests --&gt;
+&lt;/suite&gt; &lt;!-- Appium-Framework --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Appium-Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Mobikwik Automation Tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Appium-Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">android_payments</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_creditCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_debitCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_deleteCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_maxLimitPromo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_netBanking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_savedCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoneywithPromo_creditCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoneywithPromo_debitCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoneywithPromo_savedCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyEmpty_AddMoney</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyless_AddMoney</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifymore_AddMoney</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">iOS_payments</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_creditCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_debitCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_deleteCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_maxLimitPromo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_netBanking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoney_savedCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoneywithPromo_creditCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoneywithPromo_debitCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddMoneywithPromo_savedCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyEmpty_AddMoney</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyless_AddMoney</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifymore_AddMoney</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Appium-Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Appium-Framework');
+function tableData_Appium-Framework() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifymore_AddMoney')
+data.setCell(0, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAddMoneywithPromo_savedCard')
+data.setCell(1, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAddMoney_maxLimitPromo')
+data.setCell(2, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAddMoney_savedCard')
+data.setCell(3, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAddMoney_creditCard')
+data.setCell(4, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAddMoney_debitCard')
+data.setCell(5, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAddMoney_deleteCard')
+data.setCell(6, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyAddMoney_netBanking')
+data.setCell(7, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyEmpty_AddMoney')
+data.setCell(8, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyless_AddMoney')
+data.setCell(9, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyAddMoneywithPromo_creditCard')
+data.setCell(10, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyAddMoneywithPromo_debitCard')
+data.setCell(11, 2, 'IntegrationTests.Tests.Payments.AddMoneyTest')
+data.setCell(11, 3, 0);
+window.suiteTableData['Appium-Framework']= { tableData: data, tableDiv: 'times-div-Appium-Framework'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 ms</span>
+              <div id="times-div-Appium-Framework">
+              </div> <!-- times-div-Appium-Framework -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Appium-Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">7 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">IntegrationTests.Tests.Payments.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLoginLogoutTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidLoginTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">IntegrationTests.Tests.Payments.SendMoneyTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifySendMoneyCases_invalidAmount</span>
+                <br/>
+                <span class="ignored-method-name">verifySendMoneyCases_insufficientWalletAmount</span>
+                <br/>
+                <span class="ignored-method-name">verifySendMoneyCases_equalsZero</span>
+                <br/>
+                <span class="ignored-method-name">verifySendMoneyCases_validAmount</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">IntegrationTests.Tests.Payments.SavedConnectionsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifySavedConnectionsFeatures</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Appium-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">IntegrationTests.Tests.Payments.AddMoneyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createDriver(android, stag, null)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25071 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoney_creditCard</span>
+                <span class="method-start">25071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25072 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoney_debitCard</span>
+                <span class="method-start">25072 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25073 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoney_deleteCard</span>
+                <span class="method-start">25073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoney_maxLimitPromo</span>
+                <span class="method-start">25073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25074 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoney_netBanking</span>
+                <span class="method-start">25075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoney_savedCard</span>
+                <span class="method-start">25075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoneywithPromo_creditCard</span>
+                <span class="method-start">25076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoneywithPromo_debitCard</span>
+                <span class="method-start">25077 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25078 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddMoneywithPromo_savedCard</span>
+                <span class="method-start">25078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25079 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyEmpty_AddMoney</span>
+                <span class="method-start">25079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyless_AddMoney</span>
+                <span class="method-start">25080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymore_AddMoney</span>
+                <span class="method-start">25080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25081 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

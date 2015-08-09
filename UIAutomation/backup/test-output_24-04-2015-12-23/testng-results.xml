@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="3" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="299531" started-at="2015-04-24T06:47:13Z" finished-at="2015-04-24T06:52:12Z">
+    <groups>
+      <group name="san">
+        <method signature="AddMoneyTest.verifyAddMoney()[pri:0, instance:IntegrationTests.tests.payments.AddMoneyTest@4411d970]" name="verifyAddMoney" class="IntegrationTests.tests.payments.AddMoneyTest"/>
+        <method signature="LoginTest.verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyInvalidLoginTest" class="IntegrationTests.tests.payments.LoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyLoginLogoutTest" class="IntegrationTests.tests.payments.LoginTest"/>
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@3d24753a]" name="verifySavedConnectionsFeatures" class="IntegrationTests.tests.payments.SavedConnectionsTest"/>
+      </group> <!-- san -->
+      <group name="sanity">
+        <method signature="AddMoneyTest.verifyAddMoney()[pri:0, instance:IntegrationTests.tests.payments.AddMoneyTest@4411d970]" name="verifyAddMoney" class="IntegrationTests.tests.payments.AddMoneyTest"/>
+        <method signature="LoginTest.verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyInvalidLoginTest" class="IntegrationTests.tests.payments.LoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyLoginLogoutTest" class="IntegrationTests.tests.payments.LoginTest"/>
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@3d24753a]" name="verifySavedConnectionsFeatures" class="IntegrationTests.tests.payments.SavedConnectionsTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Mobikwik Automation Tests" duration-ms="299531" started-at="2015-04-24T06:47:13Z" finished-at="2015-04-24T06:52:12Z">
+      <class name="IntegrationTests.tests.payments.LoginTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="createDriver" is-config="true" duration-ms="30608" started-at="2015-04-24T12:19:25Z" finished-at="2015-04-24T12:19:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyLoginLogoutTest" duration-ms="72163" started-at="2015-04-24T12:19:56Z" finished-at="2015-04-24T12:21:08Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: unknown
+	at UITestFramework.MobiKwikScreen.waitForVisibility(Unknown Source)
+	at IntegrationTests.helpers.android.payments.AndroidLoginHelper.mbLoginScreen(Unknown Source)
+	at IntegrationTests.tests.payments.LoginTest.verifyLoginLogoutTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLogoutTest -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-24T12:19:56Z" finished-at="2015-04-24T12:19:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="teardown" is-config="true" duration-ms="1163" started-at="2015-04-24T12:21:08Z" finished-at="2015-04-24T12:21:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="createDriver" is-config="true" duration-ms="30403" started-at="2015-04-24T12:21:09Z" finished-at="2015-04-24T12:21:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="verifyInvalidLoginTest" duration-ms="32192" started-at="2015-04-24T12:21:40Z" finished-at="2015-04-24T12:22:12Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at UITestFramework.MobiKwikScreen.waitForVisibility(Unknown Source)
+	at IntegrationTests.helpers.android.payments.AndroidLoginHelper.mbLoginScreen(Unknown Source)
+	at IntegrationTests.tests.payments.LoginTest.verifyInvalidLoginTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4723 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLoginTest -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-24T12:21:40Z" finished-at="2015-04-24T12:21:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.LoginTest@35f983a6]" name="teardown" is-config="true" duration-ms="0" started-at="2015-04-24T12:22:12Z" finished-at="2015-04-24T12:22:12Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[
+Command duration or timeout: 532 milliseconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_stag.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_stag.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: fb866c4c-d9b0-4313-ae85-a53ceea4688d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 532 milliseconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_stag.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_stag.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: fb866c4c-d9b0-4313-ae85-a53ceea4688d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.payments.LoginTest -->
+      <class name="IntegrationTests.tests.payments.SavedConnectionsTest">
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@3d24753a]" name="teardown" is-config="true" duration-ms="0" started-at="2015-04-24T12:22:12Z" finished-at="2015-04-24T12:22:12Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@3d24753a]" name="verifySavedConnectionsFeatures" duration-ms="0" started-at="2015-04-24T12:22:12Z" finished-at="2015-04-24T12:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySavedConnectionsFeatures -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@3d24753a]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-04-24T12:22:12Z" finished-at="2015-04-24T12:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.SavedConnectionsTest@3d24753a]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-24T12:22:12Z" finished-at="2015-04-24T12:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+      </class> <!-- IntegrationTests.tests.payments.SavedConnectionsTest -->
+      <class name="IntegrationTests.tests.payments.AddMoneyTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.AddMoneyTest@4411d970]" name="createDriver" is-config="true" duration-ms="59039" started-at="2015-04-24T12:17:13Z" finished-at="2015-04-24T12:18:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.payments.AddMoneyTest@4411d970]" name="instantiateHelpers" is-config="true" duration-ms="11" started-at="2015-04-24T12:18:12Z" finished-at="2015-04-24T12:18:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="FAIL" signature="verifyAddMoney()[pri:0, instance:IntegrationTests.tests.payments.AddMoneyTest@4411d970]" name="verifyAddMoney" duration-ms="72196" started-at="2015-04-24T12:18:12Z" finished-at="2015-04-24T12:19:24Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: unknown
+	at UITestFramework.MobiKwikScreen.waitForVisibility(Unknown Source)
+	at IntegrationTests.helpers.android.payments.AndroidLoginHelper.mbLoginScreen(Unknown Source)
+	at IntegrationTests.helpers.android.payments.AndroidLoginHelper.mbLoginPart(Unknown Source)
+	at IntegrationTests.tests.payments.AddMoneyTest.verifyAddMoney(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoney -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.payments.AddMoneyTest@4411d970]" name="teardown" is-config="true" duration-ms="1198" started-at="2015-04-24T12:19:24Z" finished-at="2015-04-24T12:19:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.payments.AddMoneyTest -->
+    </test> <!-- Mobikwik Automation Tests -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>

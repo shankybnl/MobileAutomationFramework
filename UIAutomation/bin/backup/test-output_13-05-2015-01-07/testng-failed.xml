@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Appium-Framework]">
+  <parameter name="build" value="prod"/>
+  <parameter name="invokeDriver" value="android"/>
+  <listeners>
+    <listener class-name="UITestFramework.retryLogic.RetryListener"/>
+  </listeners>
+  <test name="Mobikwik Automation Tests(failed)">
+    <groups>
+      <run>
+        <include name="appiumStart"/>
+        <include name="setUp"/>
+        <include name="instantiateHelpers"/>
+        <include name="sanity"/>
+        <include name="tearDown"/>
+        <include name="appiumStop"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="IntegrationTests.Tests.Payments.LoginTest">
+        <methods>
+          <include name="verifyLoginLogoutTest"/>
+          <include name="verifyInvalidLoginTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTests.Tests.Payments.LoginTest -->
+    </classes>
+  </test> <!-- Mobikwik Automation Tests(failed) -->
+</suite> <!-- Failed suite [Appium-Framework] -->

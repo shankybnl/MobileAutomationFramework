@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Mobikwik_UIAutomation_Framework" default="compile"
+	basedir=".">
+
+	<tstamp prefix="getTime">
+		<format property="TODAY" pattern="dd-MM-yyyy-hh-mm" />
+	</tstamp>
+
+	<property name="src" location="${basedir}/src" />
+	<property name="lib" location="${basedir}/libs" />
+	<property name="build" location="${basedir}/build" />
+	<property name="test-output" location="${basedir}/test-output" />
+	<property name="backup" location="${basedir}/backup" />
+
+
+
+	<target name="setClassPath">
+		<path id="classpath_jars">
+			<pathelement path="${basedir}/*" />
+			<fileset dir="${lib}" casesensitive="yes">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+
+	</target>
+
+	<target name="loadTestNG" depends="setClassPath">
+		<taskdef resource="testngtasks" classpath="${test.classpath}" />
+	</target>
+
+	<target name="init">
+		<mkdir dir="${build}" />
+		<mkdir dir="${backup}" />
+		<mkdir dir="${test-output}" />
+	</target>
+
+	<target name="clean">
+		<delete dir="${build}" />
+		<copy todir="${backup}/test-output_${getTime.TODAY}">
+			<fileset dir="${test-output}" />
+		</copy>
+		<delete dir="${test-output}" />
+
+	</target>
+
+	<target name="compile" depends="clean, init, setClassPath, loadTestNG">
+		<javac encoding="UTF-8" destdir="${build}" srcdir="${src}"
+			classpath="${test.classpath}" />
+	</target>
+
+	<target name="executeAndroidTest" depends="compile">
+		<testng classpath="${test.classpath}:${build}">
+			<xmlfileset dir="${basedir}" includes="execute_android_test.xml" />
+		</testng>
+	</target>
+	
+		<target name="executeiOSTest" depends="compile">
+		<testng classpath="${test.classpath}:${build}">
+			<xmlfileset dir="${basedir}" includes="execute_iOS_test.xml" />
+		</testng>
+	</target>
+
+	
+
+	<target name="send-report">
+		<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" user="" password=""
+		    subject="UI Automation tests execution report">
+			<from address="sender_address"></from>
+			<to address="reciepient1_adress"></to>
+			<to address="reciepient2_address"></to>
+			<message>Please find attached execution report for Automated tests</message>
+			<attachments>
+				<fileset dir="${basedir}/test-output">
+					<include name="emailable-report.html"></include>
+				</fileset>
+			</attachments>
+		</mail>
+	</target>
+</project>
+

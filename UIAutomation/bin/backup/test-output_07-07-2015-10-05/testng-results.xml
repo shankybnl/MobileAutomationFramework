@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="19" failed="0" total="19" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="121" started-at="2015-07-07T16:34:58Z" finished-at="2015-07-07T16:34:58Z">
+    <groups>
+      <group name="cashpay">
+        <method signature="CashPayTest.cashPay_StaticText()[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="cashPay_StaticText" class="IntegrationTests.Tests.Payments.CashPayTest"/>
+      </group> <!-- cashpay -->
+      <group name="san">
+        <method signature="CashPayTest.cashPay_StaticText()[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="cashPay_StaticText" class="IntegrationTests.Tests.Payments.CashPayTest"/>
+      </group> <!-- san -->
+      <group name="refer_earn">
+        <method signature="Refer_EarnTest.refer_earnAmount()[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="refer_earnAmount" class="IntegrationTests.Tests.Payments.Refer_EarnTest"/>
+      </group> <!-- refer_earn -->
+      <group name="addMoney">
+        <method signature="AddMoneyTest.verifyAddMoney_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_debitCard2()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard2" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_deleteCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_deleteCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_netBanking3()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_netBanking3" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_savedCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_savedCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoneywithPromo_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoneywithPromo_debitCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+      </group> <!-- addMoney -->
+      <group name="sanity">
+        <method signature="AddMoneyTest.verifyAddMoney_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_debitCard2()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard2" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_deleteCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_deleteCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_netBanking3()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_netBanking3" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_savedCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_savedCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoneywithPromo_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoneywithPromo_debitCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="HomeScreenTest.verifyWalletOffers_HomeScreen()[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="verifyWalletOffers_HomeScreen" class="IntegrationTests.Tests.Payments.HomeScreenTest"/>
+        <method signature="LoginTest.verifyForgotPasswordTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyForgotPasswordTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyLoginLogoutTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+        <method signature="PaybackTest.payback_RedeemZeroPoints()[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="payback_RedeemZeroPoints" class="IntegrationTests.Tests.Payments.PaybackTest"/>
+        <method signature="Refer_EarnTest.refer_earnAmount()[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="refer_earnAmount" class="IntegrationTests.Tests.Payments.Refer_EarnTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_validAmount_viaMobile" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Accepts" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Cancels()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Cancels" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="verifySavedConnectionsFeatures" class="IntegrationTests.Tests.Payments.SavedConnectionsTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_validAmount_viaContacts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaContacts" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaMobile" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_viaMobile_Accepts" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+      </group> <!-- sanity -->
+      <group name="prod_sanity">
+        <method signature="AddMoneyTest.verifyAddMoney_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_debitCard2()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard2" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_deleteCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_deleteCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_netBanking3()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_netBanking3" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoney_savedCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_savedCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="AddMoneyTest.verifyAddMoneywithPromo_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoneywithPromo_debitCard" class="IntegrationTests.Tests.Payments.AddMoneyTest"/>
+        <method signature="CashPayTest.cashPay_StaticText()[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="cashPay_StaticText" class="IntegrationTests.Tests.Payments.CashPayTest"/>
+        <method signature="HomeScreenTest.verifyWalletOffers_HomeScreen()[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="verifyWalletOffers_HomeScreen" class="IntegrationTests.Tests.Payments.HomeScreenTest"/>
+        <method signature="LoginTest.verifyForgotPasswordTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyForgotPasswordTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyLoginLogoutTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+        <method signature="PaybackTest.payback_RedeemZeroPoints()[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="payback_RedeemZeroPoints" class="IntegrationTests.Tests.Payments.PaybackTest"/>
+        <method signature="Refer_EarnTest.refer_earnAmount()[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="refer_earnAmount" class="IntegrationTests.Tests.Payments.Refer_EarnTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_validAmount_viaMobile" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Accepts" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Cancels()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Cancels" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="verifySavedConnectionsFeatures" class="IntegrationTests.Tests.Payments.SavedConnectionsTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_validAmount_viaContacts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaContacts" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaMobile" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_viaMobile_Accepts" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+      </group> <!-- prod_sanity -->
+      <group name="login">
+        <method signature="LoginTest.verifyForgotPasswordTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyForgotPasswordTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyLoginLogoutTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+      </group> <!-- login -->
+      <group name="home">
+        <method signature="HomeScreenTest.verifyWalletOffers_HomeScreen()[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="verifyWalletOffers_HomeScreen" class="IntegrationTests.Tests.Payments.HomeScreenTest"/>
+      </group> <!-- home -->
+      <group name="sendMoney">
+        <method signature="SendMoneyTest.verifySendMoneyCases_validAmount_viaContacts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaContacts" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaMobile" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+        <method signature="SendMoneyTest.verifySendMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_viaMobile_Accepts" class="IntegrationTests.Tests.Payments.SendMoneyTest"/>
+      </group> <!-- sendMoney -->
+      <group name="web">
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyLoginLogoutTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+      </group> <!-- web -->
+      <group name="payback">
+        <method signature="PaybackTest.payback_RedeemZeroPoints()[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="payback_RedeemZeroPoints" class="IntegrationTests.Tests.Payments.PaybackTest"/>
+      </group> <!-- payback -->
+      <group name="harsimran">
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyLoginLogoutTest" class="IntegrationTests.Tests.Payments.LoginTest"/>
+      </group> <!-- harsimran -->
+      <group name="savedConnections">
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="verifySavedConnectionsFeatures" class="IntegrationTests.Tests.Payments.SavedConnectionsTest"/>
+      </group> <!-- savedConnections -->
+      <group name="requestMoney">
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_validAmount_viaMobile" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Accepts" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+        <method signature="RequestMoneyTest.verifyRequestMoneyCases_viaMobile_Cancels()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Cancels" class="IntegrationTests.Tests.Payments.RequestMoneyTest"/>
+      </group> <!-- requestMoney -->
+    </groups>
+    <test name="Mobikwik Automation Tests" duration-ms="121" started-at="2015-07-07T16:34:58Z" finished-at="2015-07-07T16:34:58Z">
+      <class name="IntegrationTests.Tests.Payments.Refer_EarnTest">
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="refer_earnAmount()[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="refer_earnAmount" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refer_earnAmount -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.Refer_EarnTest@1936f0f5]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+      </class> <!-- IntegrationTests.Tests.Payments.Refer_EarnTest -->
+      <class name="IntegrationTests.Tests.Payments.SavedConnectionsTest">
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="verifySavedConnectionsFeatures" duration-ms="1" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySavedConnectionsFeatures -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.SavedConnectionsTest@327471b5]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.Tests.Payments.SavedConnectionsTest -->
+      <class name="IntegrationTests.Tests.Payments.LoginTest">
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyLoginLogoutTest" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLogoutTest -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifyForgotPasswordTest()[pri:0, instance:IntegrationTests.Tests.Payments.LoginTest@2d554825]" name="verifyForgotPasswordTest" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordTest -->
+      </class> <!-- IntegrationTests.Tests.Payments.LoginTest -->
+      <class name="IntegrationTests.Tests.Payments.SendMoneyTest">
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifySendMoneyCases_validAmount_viaContacts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaContacts" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendMoneyCases_validAmount_viaContacts -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifySendMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_validAmount_viaMobile" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendMoneyCases_validAmount_viaMobile -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="verifySendMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="verifySendMoneyCases_viaMobile_Accepts" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendMoneyCases_viaMobile_Accepts -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.SendMoneyTest@180bc464]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.Tests.Payments.SendMoneyTest -->
+      <class name="IntegrationTests.Tests.Payments.HomeScreenTest">
+        <test-method status="SKIP" signature="verifyWalletOffers_HomeScreen()[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="verifyWalletOffers_HomeScreen" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWalletOffers_HomeScreen -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.HomeScreenTest@47f6473]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.Tests.Payments.HomeScreenTest -->
+      <class name="IntegrationTests.Tests.Payments.RequestMoneyTest">
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="verifyRequestMoneyCases_validAmount_viaMobile()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_validAmount_viaMobile" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequestMoneyCases_validAmount_viaMobile -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="verifyRequestMoneyCases_viaMobile_Accepts()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Accepts" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequestMoneyCases_viaMobile_Accepts -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="verifyRequestMoneyCases_viaMobile_Cancels()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="verifyRequestMoneyCases_viaMobile_Cancels" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequestMoneyCases_viaMobile_Cancels -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.RequestMoneyTest@6537cf78]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+      </class> <!-- IntegrationTests.Tests.Payments.RequestMoneyTest -->
+      <class name="IntegrationTests.Tests.Payments.PaybackTest">
+        <test-method status="FAIL" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by @Configuration on method createDriver but has not been marked @Optional or defined
+in /home/shanky/tests/AutomationTests/UIAutomation/TestNg/Payments/testng_android_payments_prod.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by @Configuration on method createDriver but has not been marked @Optional or defined
+in /home/shanky/tests/AutomationTests/UIAutomation/TestNg/Payments/testng_android_payments_prod.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="payback_RedeemZeroPoints()[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="payback_RedeemZeroPoints" duration-ms="22" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payback_RedeemZeroPoints -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.PaybackTest@2d3fcdbd]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.Tests.Payments.PaybackTest -->
+      <class name="IntegrationTests.Tests.Payments.CashPayTest">
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="cashPay_StaticText()[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="cashPay_StaticText" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cashPay_StaticText -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.CashPayTest@6b143ee9]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.Tests.Payments.CashPayTest -->
+      <class name="IntegrationTests.Tests.Payments.AddMoneyTest">
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="verifyAddMoney_netBanking3()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_netBanking3" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoney_netBanking3 -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifyAddMoney_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoney_debitCard -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="verifyAddMoney_debitCard2()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_debitCard2" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoney_debitCard2 -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="verifyAddMoney_savedCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_savedCard" duration-ms="1" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoney_savedCard -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="SKIP" signature="verifyAddMoney_deleteCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoney_deleteCard" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoney_deleteCard -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UITestFramework.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="SKIP" signature="verifyAddMoneywithPromo_debitCard()[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="verifyAddMoneywithPromo_debitCard" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddMoneywithPromo_debitCard -->
+        <test-method status="SKIP" signature="createDriver(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String)[pri:0, instance:IntegrationTests.Tests.Payments.AddMoneyTest@3567135c]" name="createDriver" is-config="true" duration-ms="0" started-at="2015-07-07T22:04:58Z" finished-at="2015-07-07T22:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+      </class> <!-- IntegrationTests.Tests.Payments.AddMoneyTest -->
+    </test> <!-- Mobikwik Automation Tests -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Invalid Login scenario failed]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Login verification failed]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Logout verification failed]]>
+    </line>
+  </reporter-output>
+  <suite name="Appium-Framework" duration-ms="248007" started-at="2015-04-10T10:00:08Z" finished-at="2015-04-10T10:04:16Z">
+    <groups>
+      <group name="sanity">
+        <method signature="InvalidLoginTest.verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="verifyInvalidLoginTest" class="IntegrationTests.tests.InvalidLoginTest"/>
+        <method signature="LoginTest.verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.LoginTest@6cd8737]" name="verifyLoginLogoutTest" class="IntegrationTests.tests.LoginTest"/>
+        <method signature="SavedConnectionsTest.verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.SavedConnectionsTest@566776ad]" name="verifySavedConnectionsFeatures" class="IntegrationTests.tests.SavedConnectionsTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Mobikwik Automation Tests" duration-ms="248007" started-at="2015-04-10T10:00:08Z" finished-at="2015-04-10T10:04:16Z">
+      <class name="IntegrationTests.tests.SavedConnectionsTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.SavedConnectionsTest@566776ad]" name="createDriver" is-config="true" duration-ms="23822" started-at="2015-04-10T15:32:40Z" finished-at="2015-04-10T15:33:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="FAIL" signature="verifySavedConnectionsFeatures()[pri:0, instance:IntegrationTests.tests.SavedConnectionsTest@566776ad]" name="verifySavedConnectionsFeatures" duration-ms="72293" started-at="2015-04-10T15:33:04Z" finished-at="2015-04-10T15:34:16Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 026be651-c9b7-4300-8f97-772c148235de]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 026be651-c9b7-4300-8f97-772c148235de
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at UITestFramework.MobiKwikScreen.waitForVisibility(Unknown Source)
+	at IntegrationTests.helpers.phone.android.AndroidLoginHelper.mbLoginScreen(Unknown Source)
+	at IntegrationTests.tests.SavedConnectionsTest.verifySavedConnectionsFeatures(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySavedConnectionsFeatures -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.SavedConnectionsTest@566776ad]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-10T15:33:04Z" finished-at="2015-04-10T15:33:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:IntegrationTests.tests.SavedConnectionsTest@566776ad]" name="teardown" is-config="true" duration-ms="0" started-at="2015-04-10T15:34:16Z" finished-at="2015-04-10T15:34:16Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[
+Command duration or timeout: 32 milliseconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 026be651-c9b7-4300-8f97-772c148235de]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 32 milliseconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Sanjit-pc', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, networkConnectionEnabled=true, warnings={}, app-package=com.mobikwik_new, app-activity=.MobikwikMain, databaseEnabled=false, deviceName=Android Emulator, platform=LINUX, app-wait-activity=.MobikwikMain, desired={app=D:\Automation\AutomationTests\UIAutomation\src\app\Mobikwik_beta.apk, app-wait-activity=.MobikwikMain, app-package=com.mobikwik_new, app-activity=.MobikwikMain, platformName=Android, deviceName=Android Emulator}, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 026be651-c9b7-4300-8f97-772c148235de
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at IntegrationTests.lib.CreateSession.teardown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.SavedConnectionsTest -->
+      <class name="IntegrationTests.tests.InvalidLoginTest">
+        <test-method status="PASS" signature="invokeAppium()[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="invokeAppium" is-config="true" duration-ms="5083" started-at="2015-04-10T15:30:03Z" finished-at="2015-04-10T15:30:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeAppium -->
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="createDriver" is-config="true" duration-ms="36621" started-at="2015-04-10T15:30:08Z" finished-at="2015-04-10T15:30:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="verifyInvalidLoginTest()[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="verifyInvalidLoginTest" duration-ms="33992" started-at="2015-04-10T15:30:45Z" finished-at="2015-04-10T15:31:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Invalid Login scenario failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLoginTest -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-10T15:30:45Z" finished-at="2015-04-10T15:30:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="teardown" is-config="true" duration-ms="4284" started-at="2015-04-10T15:31:19Z" finished-at="2015-04-10T15:31:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="stopAppium()[pri:0, instance:IntegrationTests.tests.InvalidLoginTest@6fadae5d]" name="stopAppium" is-config="true" duration-ms="0" started-at="2015-04-10T15:34:16Z" finished-at="2015-04-10T15:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopAppium -->
+      </class> <!-- IntegrationTests.tests.InvalidLoginTest -->
+      <class name="IntegrationTests.tests.LoginTest">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:IntegrationTests.tests.LoginTest@6cd8737]" name="createDriver" is-config="true" duration-ms="24691" started-at="2015-04-10T15:31:23Z" finished-at="2015-04-10T15:31:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="verifyLoginLogoutTest()[pri:0, instance:IntegrationTests.tests.LoginTest@6cd8737]" name="verifyLoginLogoutTest" duration-ms="47768" started-at="2015-04-10T15:31:48Z" finished-at="2015-04-10T15:32:36Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Login verification failed]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Logout verification failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLogoutTest -->
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.tests.LoginTest@6cd8737]" name="instantiateHelpers" is-config="true" duration-ms="0" started-at="2015-04-10T15:31:48Z" finished-at="2015-04-10T15:31:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.tests.LoginTest@6cd8737]" name="teardown" is-config="true" duration-ms="4489" started-at="2015-04-10T15:32:36Z" finished-at="2015-04-10T15:32:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTests.tests.LoginTest -->
+    </test> <!-- Mobikwik Automation Tests -->
+  </suite> <!-- Appium-Framework -->
+</testng-results>
