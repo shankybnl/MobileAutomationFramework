@@ -149,7 +149,7 @@ IOSLoginHelper would be under iOS -> IOSLoginHelper.
 Similar thing should be done for element locators. There is no base folder in case of screens.For android locators, it would be under screens->android->AndroidLoginScreen. 
 For iOS locators,  it would be under screens->ios->IOSLoginScreen. 
 
-<h1>How to execute a test
+<h1>How to execute a test<h1>
 
 Ant is used as build tool (can be downloaded from here). build.xml file is present in base directory and have targets to android and iOS Test.
 
@@ -157,14 +157,14 @@ Connect your device to your machine or start the emulator.
 
 *Note: start appium server on your machine if not included programatically *
 
-<h6>Run below commands to execute android test:
+<h6>Run below commands to execute android test:<h6>
 
 $ cd UIAutomation/
 $ ant executeAndroidTest 
 
 Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginHelper. Now you are ready to run below commands.
 
-<h6>Run below commands to execute iOS test:
+<h6>Run below commands to execute iOS test:<h6>
 
 $ cd UIAutomation/
 $ ant executeAndroidTest 
