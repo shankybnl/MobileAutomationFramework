@@ -95,10 +95,10 @@ runtime of the helper classes required in the test. Object creation happens depe
 
 
 
-<h2>Javadoc of the project can be found in doc folder. It contains information all classes and methods.<h2>
+<h3>Javadoc of the project can be found in doc folder. It contains information all classes and methods.<h3>
 
 
-<h1>Execution flow of a Test
+<h1>Execution flow of a Test<h1>
 
 Below is execution flow with help of login test as example.
 
