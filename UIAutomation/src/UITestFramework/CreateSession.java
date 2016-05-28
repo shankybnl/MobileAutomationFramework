@@ -277,7 +277,7 @@ public class CreateSession  {
 			String locale = lobConfigProp.getProperty("LOCALE");
 
 			localeConfigFis = new FileInputStream(file.getAbsoluteFile()
-					+ "//src//l10n//" + locale + "_" + platform  + ".properties");
+					+ "//src//testData//" + locale + "_" + platform  + ".properties");
 			localeConfigProp.load(localeConfigFis);
 		} 
 		else {

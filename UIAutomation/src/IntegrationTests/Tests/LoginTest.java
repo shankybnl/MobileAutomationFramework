@@ -5,9 +5,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import IntegrationTests.helpers.iOS.IOSLoginHelper;
-import IntegrationTests.helpers.android.AndroidLoginHelper;
-import IntegrationTests.helpers.base.LoginHelper;
+import IntegrationTests.coreLogic.*;
+import IntegrationTests.coreLogic.base.*;
+import IntegrationTests.coreLogic.android.*;
+import IntegrationTests.coreLogic.iOS.*;
 import UITestFramework.CreateSession;
 
 /**

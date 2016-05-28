@@ -66,12 +66,6 @@
 	<classpathentry kind="lib" path="libs/netty-3.5.7.Final.jar"/>
 	<classpathentry kind="lib" path="libs/operadriver-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/phantomjsdriver-1.0.1.jar"/>
-	<classpathentry kind="lib" path="libs/poi-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="libs/poi-examples-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="libs/poi-excelant-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="libs/poi-ooxml-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="libs/poi-ooxml-schemas-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="libs/poi-scratchpad-3.9-20121203.jar"/>
 	<classpathentry kind="lib" path="libs/pop3.jar"/>
 	<classpathentry kind="lib" path="libs/protobuf-java-2.4.1.jar"/>
 	<classpathentry kind="lib" path="libs/reflections-0.9.8.jar"/>
@@ -90,9 +84,5 @@
 	<classpathentry kind="lib" path="libs/selenium-java-2.45.0.jar"/>
 	<classpathentry kind="lib" path="libs/selenium-server-standalone-2.43.1.jar"/>
 	<classpathentry kind="lib" path="libs/ant-javamail-1.6.5.jar"/>
-	<classpathentry kind="lib" path="/home/shanky/tests/AutomationTests/UIAutomation/libs/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/home/shanky/tests/AutomationTests/UIAutomation/libs/sauce_java_common-2.1.9.jar"/>
-	<classpathentry kind="lib" path="/home/shanky/tests/AutomationTests/UIAutomation/libs/saucerest-1.0.22.jar"/>
-	<classpathentry kind="lib" path="/home/shanky/tests/AutomationTests/UIAutomation/libs/sauce_testng-2.1.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

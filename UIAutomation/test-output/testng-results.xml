@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Appium-Framework" duration-ms="53767" started-at="2015-08-09T13:12:30Z" finished-at="2015-08-09T13:13:23Z">
+  <suite name="Appium-Framework" duration-ms="44772" started-at="2016-05-28T13:45:21Z" finished-at="2016-05-28T13:46:06Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="53767" started-at="2015-08-09T13:12:30Z" finished-at="2015-08-09T13:13:23Z">
+    <test name="LoginTest" duration-ms="44772" started-at="2016-05-28T13:45:21Z" finished-at="2016-05-28T13:46:06Z">
       <class name="IntegrationTests.Tests.LoginTest">
-        <test-method status="PASS" signature="createDriver(java.lang.String, java.lang.reflect.Method)[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="createDriver" is-config="true" duration-ms="18772" started-at="2015-08-09T18:42:30Z" finished-at="2015-08-09T18:42:48Z">
+        <test-method status="PASS" signature="createDriver(java.lang.String, java.lang.reflect.Method)[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="createDriver" is-config="true" duration-ms="20706" started-at="2016-05-28T19:15:21Z" finished-at="2016-05-28T19:15:42Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="instantiateHelpers" is-config="true" duration-ms="7" started-at="2015-08-09T18:42:48Z" finished-at="2015-08-09T18:42:48Z">
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="instantiateHelpers" is-config="true" duration-ms="7" started-at="2016-05-28T19:15:42Z" finished-at="2016-05-28T19:15:42Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiateHelpers -->
-        <test-method status="PASS" signature="LoginVerification()[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="LoginVerification" duration-ms="33852" started-at="2015-08-09T18:42:48Z" finished-at="2015-08-09T18:43:22Z">
+        <test-method status="PASS" signature="LoginVerification()[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="LoginVerification" duration-ms="22417" started-at="2016-05-28T19:15:42Z" finished-at="2016-05-28T19:16:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginVerification -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.Tests.LoginTest@3f3afe78]" name="teardown" is-config="true" duration-ms="1121" started-at="2015-08-09T18:43:22Z" finished-at="2015-08-09T18:43:23Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="teardown" is-config="true" duration-ms="1618" started-at="2016-05-28T19:16:04Z" finished-at="2016-05-28T19:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
