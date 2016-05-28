@@ -26,7 +26,7 @@ Add below listener to testng.xml file to include retry functionality.
 
 
 
-**GenericMethods.java** : It is a common repository for all the  webdriver and appium methods which are called in each helper class. Every new method which is being used in helper classes should be added in this class as well. It is to reduce the duplicate code. Each screen class extends this class. Below are few methods defined in this class:
+**GenericMethods.java** : It is a common repository for all the  webdriver and appium methods which are called in each coreLogic classes. Every new method which is being used in coreLogic classes should be added in this class as well. It is to reduce the duplicate code. Each screen class extends this class. Below are few methods defined in this class:
 
 waitForVisibility(By targetElement) - method to wait for an element to be visible
 findElement(By locator) - method to find an element
@@ -47,7 +47,7 @@ findElements(By locator) - method to find all the elements of specific locator
 
 2. iOS_config.properties - contains the location of the file where test data required by iOS tests is defined
 
-**Package: l10n** : This package contains files having android and iOS test data. It contains two files: en_US_android.properties and en_US_iOS.properties.
+**Package: testData** : This package contains files having android and iOS test data. It contains two files: en_US_android.properties and en_US_iOS.properties.
 
 ![image](UIAutomation/images/5.png)
 
@@ -59,11 +59,11 @@ findElements(By locator) - method to find all the elements of specific locator
 
 ![image](UIAutomation/images/6.png)
 				
-**Package: IntegrationsTests** : This package has sub-packages: screens, helpers, tests.
+**Package: IntegrationsTests** : This package has sub-packages: screens, coreLogic, tests.
 
 ![image](UIAutomation/images/7.png)
 
-**Package: IntegrationTests.screens** : Classes in this package contains locators which are being used in helpers. Each page in mobile application is mapped to screen. E.g. for android login page, its AndroidLoginScreen. Segregated the locators on the bases of platform: android or iOS
+**Package: IntegrationTests.screens** : Classes in this package contains locators which are being used in coreLogic classes. Each page in mobile application is mapped to screen. E.g. for android login page, its AndroidLoginScreen. Segregated the locators on the bases of platform: android or iOS
 
 **Package: IntegrationTests.screens.android** : Each screen on andriod app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - AndroidLoginScreen. Each android screen class extends GenericMethods.java. 
 
@@ -71,19 +71,19 @@ findElements(By locator) - method to find all the elements of specific locator
 
 **Package: IntegrationTests.screens.ios** : Each screen on ios app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - IOSLoginScreen etc. Each iOS screen class extends GenericMethods.java. 
 
-**Package: IntegrationTests.phone.helpers** : Classes in this package contains methods which performs intended actions and validations required by a test. Divided the helpers package depending on the platform : android, ios and base
+**Package: IntegrationTests.phone.coreLogic** : Classes in this package contains methods which performs intended actions and validations required by a test. Divided the coreLogic package depending on the platform : android, ios and base
  		
-**Package: IntegrationTests.phone.helpers.base** : For each screen there would be corresponding helper. Classes under this package contains abstract methods which are defined in their respective classes in helpers.android and helpers.ios package. Eg: LoginHelper.
+**Package: IntegrationTests.phone.coreLogic.base** : For each screen there would be corresponding coreLogic class. Classes under this package contains abstract methods which are defined in their respective classes in coreLogic.android and coreLogic.ios package. Eg: LoginCoreLogic.
 				
-**Package: IntegrationTests.phone.helpers.android** : For each base helper there would be corresponding android helper (e.g.  - AndroidLoginHelper)
-where abstract method declared in base class are defined. Corresponding base class helper will be extended by android helper class. E.g. for LoginHelper base class,  AndroidLoginHelper will extend LoginHelper.
+**Package: IntegrationTests.phone.coreLogic.android** : For each base coreLogic there would be corresponding android coreLogic (e.g.  - AndroidLoginCoreLogic)
+where abstract method declared in base class are defined. Corresponding base class, coreLogic will be extended by android coreLogic class. E.g. for LoginCoreLogic base class,  AndroidLoginCoreLogic will extend LoginCoreLogic.
 .
-**Package: IntegrationTests.phone.helpers.ios** : For each base helper there would be corresponding ios helper (e.g.  - IOSLoginHelper)
-where abstract method declared in base class are defined.Corresponding base class helper will be extended by ios helper class. E.g. for LoginHelper base class, IOSLoginHelper will extend LoginHelper.
+**Package: IntegrationTests.phone.coreLogic.ios** : For each base coreLogic class there would be corresponding ios coreLogic class (e.g.  - IOSLoginCoreLogic)
+where abstract method declared in base class are defined.Corresponding base coreLogic class will be extended by ios coreLogic class. E.g. for LoginCoreLogic base class, IOSLoginCoreLogic will extend LoginCoreLogic.
 
 
-**Package: IntegrationTests.phone.helpers.tests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
-runtime of the helper classes required in the test. Object creation happens depending on the platform passed through invokeDriver parameter (android or ios). Then test calls methods defined in the helpers (of which object is created).
+**Package: IntegrationTests.phone.coreLogic.tests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
+runtime of the coreLogic classes required in the test. Object creation happens depending on the platform passed through invokeDriver parameter (android or ios). Then test calls methods defined in the coreLogic (of which object is created).
 
 ![image](UIAutomation/images/9.png)
 
@@ -111,11 +111,11 @@ When testng_android.xml file runs, it executes invokeAppium() method (part of Cr
 
 ![image](UIAutomation/images/12.png)
 
-Next comes “instantiateHelpers” group. It would be present in every test under @BeforeMethod annotation. It creates object of all the helper classes (depends on platform ios/android) which is required by test to run that test. Object is used to access all the methods present in helpers. In this case, we are creating object of AndroidLoginHelper class which has methods to login.
+Next comes “instantiateHelpers” group. It would be present in every test under @BeforeMethod annotation. It creates object of all the coreLogic classes (depends on platform ios/android) which is required by test to run that test. Object is used to access all the methods present in coreLogic classes. In this case, we are creating object of AndroidLoginCoreLogic class which has methods to login.
 
 ![image](UIAutomation/images/13.png)
 
-Next @Test Method is executed. Here, we are calling the methods which is required to verify login flow present in AndroidLoginHelper class using loginhelper object. And loading required test data from en_US_android_config.properties/en_US_iOS_config.properties.
+Next @Test Method is executed. Here, we are calling the methods which is required to verify login flow present in AndroidLoginCoreLogic class using LoginCoreLogic object. And loading required test data from en_US_android_config.properties/en_US_iOS_config.properties.
 
 
 ![image](UIAutomation/images/14.png)
@@ -130,16 +130,16 @@ Once tests execution is completed. @AfterMethod annotation (present in CreateSes
 @AfterSuite will be called if it is not commented. It is to stop appium server.
 
 
-Corresponding helpers and screens files should be added in same hierarchy. Example for LoginTest. LoginHelper would be under base->LoginHelper. 
+Corresponding coreLogic classes and screens files should be added in same hierarchy. Example for LoginTest. LoginCoreLogic would be under base->LoginCoreLogic. 
 
 ![image](UIAutomation/images/17.png)
 
 
-AndroidLoginHelper would be under android->AndroidLoginHelper. 
+AndroidLoginCoreLogic would be under android->AndroidLoginCoreLogic. 
 
 ![image](UIAutomation/images/18.png)
 
-IOSLoginHelper would be under iOS -> IOSLoginHelper. 
+IOSLoginCoreLogic would be under iOS -> IOSLoginCoreLogic. 
 
 
 ![image](UIAutomation/images/19.png)
@@ -160,7 +160,7 @@ Connect your device to your machine or start the emulator.
 $ cd UIAutomation/
 $ ant executeAndroidTest 
 
-*Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginHelper. Now you are ready to run below commands.*
+*Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
 
 ######Run below commands to execute iOS test:
 
