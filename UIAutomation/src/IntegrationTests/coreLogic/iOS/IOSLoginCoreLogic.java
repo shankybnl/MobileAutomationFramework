@@ -2,17 +2,17 @@ package IntegrationTests.coreLogic.iOS;
 
 import org.openqa.selenium.WebDriver;
 import IntegrationTests.screens.iOS.IOSLoginScreen;
-import IntegrationTests.coreLogic.base.LoginHelper;
+import IntegrationTests.coreLogic.base.*;
 
 
 
 /**
  * contains method to login on iOS app
  */
-public class IOSLoginHelper extends LoginHelper{
+public class IOSLoginCoreLogic extends LoginCoreLogic{
 	IOSLoginScreen iosLoginScreen;
 
-	public IOSLoginHelper(WebDriver driver){
+	public IOSLoginCoreLogic(WebDriver driver){
 		iosLoginScreen = new IOSLoginScreen(driver);
 	}
 

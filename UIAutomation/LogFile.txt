@@ -18,3 +18,6 @@
 28 May 2016 19:16:04  INFO logger - Login Successful
 28 May 2016 19:16:04  INFO logger - Verified the login
 28 May 2016 19:16:04  INFO logger - Shutting down driver
+28 May 2016 19:57:38  INFO logger - --------------------------------------
+28 May 2016 19:57:46  INFO logger - Android driver created
+28 May 2016 19:57:47  INFO logger - Running login test

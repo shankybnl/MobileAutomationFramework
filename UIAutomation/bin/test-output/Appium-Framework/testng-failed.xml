@@ -11,8 +11,7 @@
       <class name="IntegrationTests.Tests.LoginTest">
         <methods>
           <include name="createDriver"/>
-          <include name="verifyShopwithWallet"/>
-          <include name="teardown"/>
+          <include name="LoginVerification"/>
         </methods>
       </class> <!-- IntegrationTests.Tests.LoginTest -->
     </classes>

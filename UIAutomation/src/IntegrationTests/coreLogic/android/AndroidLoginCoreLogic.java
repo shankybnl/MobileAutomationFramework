@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 
 import IntegrationTests.screens.android.AndroidLoginScreen;
-import IntegrationTests.coreLogic.base.LoginHelper;
+import IntegrationTests.coreLogic.base.*;
 
 
 
@@ -14,11 +14,11 @@ import IntegrationTests.coreLogic.base.LoginHelper;
 /**
  * contains all methods to login on android app
  */
-public class AndroidLoginHelper extends LoginHelper{
+public class AndroidLoginCoreLogic extends LoginCoreLogic{
 	AndroidLoginScreen androidLoginScreen;
 
 
-	public AndroidLoginHelper(WebDriver driver){
+	public AndroidLoginCoreLogic(WebDriver driver){
 		androidLoginScreen = new AndroidLoginScreen(driver);
 	}
 

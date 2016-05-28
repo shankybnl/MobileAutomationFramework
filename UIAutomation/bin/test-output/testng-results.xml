@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Appium-Framework" duration-ms="106609" started-at="2015-08-04T06:15:10Z" finished-at="2015-08-04T06:16:57Z">
+  <suite name="Appium-Framework" duration-ms="44772" started-at="2016-05-28T13:45:21Z" finished-at="2016-05-28T13:46:06Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="106609" started-at="2015-08-04T06:15:10Z" finished-at="2015-08-04T06:16:57Z">
+    <test name="LoginTest" duration-ms="44772" started-at="2016-05-28T13:45:21Z" finished-at="2016-05-28T13:46:06Z">
       <class name="IntegrationTests.Tests.LoginTest">
-        <test-method status="PASS" signature="createDriver(java.lang.String, java.lang.reflect.Method)[pri:0, instance:IntegrationTests.Tests.LoginTest@7a5d012c]" name="createDriver" is-config="true" duration-ms="18700" started-at="2015-08-04T11:45:10Z" finished-at="2015-08-04T11:45:29Z">
+        <test-method status="PASS" signature="createDriver(java.lang.String, java.lang.reflect.Method)[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="createDriver" is-config="true" duration-ms="20706" started-at="2016-05-28T19:15:21Z" finished-at="2016-05-28T19:15:42Z">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void IntegrationTests.Tests.LoginTest.verifyShopwithWallet() throws java.lang.InterruptedException]]>
+                <![CDATA[public void IntegrationTests.Tests.LoginTest.LoginVerification() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.LoginTest@7a5d012c]" name="instantiateHelpers" is-config="true" duration-ms="30" started-at="2015-08-04T11:45:29Z" finished-at="2015-08-04T11:45:29Z">
+        <test-method status="PASS" signature="instantiateHelpers(java.lang.String)[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="instantiateHelpers" is-config="true" duration-ms="7" started-at="2016-05-28T19:15:42Z" finished-at="2016-05-28T19:15:42Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiateHelpers -->
-        <test-method status="PASS" signature="verifyShopwithWallet()[pri:0, instance:IntegrationTests.Tests.LoginTest@7a5d012c]" name="verifyShopwithWallet" duration-ms="86497" started-at="2015-08-04T11:45:29Z" finished-at="2015-08-04T11:46:56Z">
+        <test-method status="PASS" signature="LoginVerification()[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="LoginVerification" duration-ms="22417" started-at="2016-05-28T19:15:42Z" finished-at="2016-05-28T19:16:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyShopwithWallet -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.Tests.LoginTest@7a5d012c]" name="teardown" is-config="true" duration-ms="1371" started-at="2015-08-04T11:46:56Z" finished-at="2015-08-04T11:46:57Z">
+        </test-method> <!-- LoginVerification -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTests.Tests.LoginTest@2f686d1f]" name="teardown" is-config="true" duration-ms="1618" started-at="2016-05-28T19:16:04Z" finished-at="2016-05-28T19:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

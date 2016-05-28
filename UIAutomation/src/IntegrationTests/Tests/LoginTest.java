@@ -15,7 +15,7 @@ import UITestFramework.CreateSession;
  * automated test to verify login to android/iOS app.
  */
 public class LoginTest extends CreateSession {
-	LoginHelper loginHelper;
+	LoginCoreLogic loginCoreLogic;
 	String userName;
 	String password;
 	
@@ -32,10 +32,10 @@ public class LoginTest extends CreateSession {
 		password = localeConfigProp.getProperty("password");
 		
 		if (invokeDriver.equalsIgnoreCase("android")){
-			loginHelper = new AndroidLoginHelper(driver);
+			loginCoreLogic = new AndroidLoginCoreLogic(driver);
 		}																		         
 		else if (invokeDriver.equalsIgnoreCase("iOS")){
-			loginHelper = new IOSLoginHelper(driver);
+			loginCoreLogic = new IOSLoginCoreLogic(driver);
 		}
 	}
 
@@ -48,7 +48,7 @@ public class LoginTest extends CreateSession {
 	@Test
 	public void LoginVerification() throws InterruptedException {
 		Log.info("Running login test");
-		loginHelper.verifyLoginScenario(userName, password);
+		loginCoreLogic.verifyLoginScenario(userName, password);
 		Log.info("Verified the login");
 	}
 	
