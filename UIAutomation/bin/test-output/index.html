@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Appium-Framework">
-              <span class="suite-name border-passed">Appium-Framework</span>
+              <span class="suite-name border-skipped">Appium-Framework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Appium-Framework" class="hide-methods passed suite-Appium-Framework"> (hide)</a> <!-- hide-methods passed suite-Appium-Framework -->
-                      <a href="#" panel-name="suite-Appium-Framework" class="show-methods passed suite-Appium-Framework"> (show)</a> <!-- show-methods passed suite-Appium-Framework -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Appium-Framework" class="hide-methods skipped suite-Appium-Framework"> (hide)</a> <!-- hide-methods skipped suite-Appium-Framework -->
+                      <a href="#" panel-name="suite-Appium-Framework" class="show-methods skipped suite-Appium-Framework"> (show)</a> <!-- show-methods skipped suite-Appium-Framework -->
                     </span>
-                    <div class="method-list-content passed suite-Appium-Framework">
+                    <div class="method-list-content skipped suite-Appium-Framework">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Appium-Framework" title="IntegrationTests.Tests.LoginTest" hash-for-method="LoginVerification">LoginVerification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Appium-Framework -->
+                    </div> <!-- method-list-content skipped suite-Appium-Framework -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Appium-Framework" class="panel Appium-Framework">
-          <div class="suite-Appium-Framework-class-passed">
+          <div class="suite-Appium-Framework-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">IntegrationTests.Tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,11 +130,11 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Appium-Framework-class-passed -->
+          </div> <!-- suite-Appium-Framework-class-skipped -->
         </div> <!-- panel Appium-Framework -->
         <div panel-name="test-xml-Appium-Framework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/shanky/mobileFramework/MobileAutomationFramework/UIAutomation/execute_android_test.xml</span>
+            <span class="header-content">/home/user/workspace/opensource/MobileAutomationFramework/UIAutomation/execute_android_test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -192,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginVerification')
 data.setCell(0, 2, 'IntegrationTests.Tests.LoginTest')
-data.setCell(0, 3, 22417);
+data.setCell(0, 3, 2);
 window.suiteTableData['Appium-Framework']= { tableData: data, tableDiv: 'times-div-Appium-Framework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 2 ms</span>
               <div id="times-div-Appium-Framework">
               </div> <!-- times-div-Appium-Framework -->
             </div> <!-- times-div -->
@@ -225,21 +225,15 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">IntegrationTests.Tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createDriver(android, public void IntegrationTests.Tests.LoginTest.LoginVerification() throws java.lang.Interrupt...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">instantiateHelpers(android)</span>
-                <span class="method-start">20706 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginVerification</span>
-                <span class="method-start">20713 ms</span>
+                <span class="method-start">226087 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">43135 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

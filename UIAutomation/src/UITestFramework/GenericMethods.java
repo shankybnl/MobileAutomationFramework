@@ -47,7 +47,6 @@ public class GenericMethods {
 	 *  or during the activity.
 	 */
 	public Boolean isElementPresent(By targetElement) throws InterruptedException{
-		Thread.sleep(2000);
 		Boolean isPresent = driver.findElements(targetElement).size() > 0;
 		return isPresent;
 	}
@@ -79,9 +78,7 @@ public class GenericMethods {
 		}
 		catch(TimeoutException e ){
 			System.out.println("Element is not visible: " + targetElement );
-			System.out.println();
-			System.out.println(e.getMessage());
-			throw new TimeoutException();
+			throw new TimeoutException(e.getMessage());
 
 		}
 	}

@@ -137,9 +137,8 @@ public class CreateSession  {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "Android Emulator");
 		capabilities.setCapability("platformName","Android");
-		capabilities.setCapability("platformVersion","4.4");
-		capabilities.setCapability("app-package", "net.slideshare.mobile");
-		capabilities.setCapability("appiumVersion", "1.3.7");
+		capabilities.setCapability("appPackage", "net.slideshare.mobile");
+		capabilities.setCapability("appActivity", "net.slideshare.mobile.ui.SplashActivity");
 		capabilities.setCapability("name", methodName.getName());
 		capabilities.setCapability("app", app.getAbsolutePath());
 		driver = new AndroidDriver( new URL("http://localhost:4723/wd/hub"), capabilities);
