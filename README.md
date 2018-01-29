@@ -1,4 +1,5 @@
-For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com
+For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com 
+Cheers!
 
 # MobileAutomationFramework
 
