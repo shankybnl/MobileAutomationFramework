@@ -1,4 +1,5 @@
 For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com 
+If you find it helpful, **share** with your network and **star** the repository :)
 Cheers!
 
 # Mobile automated testing framework (Android and iOS)
