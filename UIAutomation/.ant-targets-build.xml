@@ -1,8 +1,0 @@
-clean
-compile
-executeAndroidTest
-executeiOSTest
-init
-loadTestNG
-send-report
-setClassPath
