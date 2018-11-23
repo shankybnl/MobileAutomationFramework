@@ -23,7 +23,7 @@ Add below listener to testng.xml file to include retry functionality.
 
 1. invokeAppium() - method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
 
-2. createDriver(String invokeDriver) - method creates the driver depending upon the passed parameter (android or iOS) and loads the properties files (config and test data properties files).
+2. createDriver(String os, Method methodName) - method creates the driver depending upon the passed parameter (android or iOS) and loads the properties files (config and test data properties files).
 
 3. Tests execution (tests are present in IntegrationTests.tests package)
 
@@ -78,26 +78,21 @@ findElements(By locator) - method to find all the elements of specific locator
 
 **Package: IntegrationTests.screens.ios** : Each screen on ios app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - IOSLoginScreen etc. Each iOS screen class extends GenericMethods.java. 
 
-**Package: IntegrationTests.phone.coreLogic** : Classes in this package contains methods which performs intended actions and validations required by a test. Divided the coreLogic package depending on the platform : android, ios and base
+**Package: IntegrationTests.coreLogic** : Classes in this package contains methods which performs intended actions and validations required by a test. Divided the coreLogic package depending on the platform : android, ios and base
  		
-**Package: IntegrationTests.phone.coreLogic.base** : For each screen there would be corresponding coreLogic class. Classes under this package contains abstract methods which are defined in their respective classes in coreLogic.android and coreLogic.ios package. Eg: LoginCoreLogic.
+**Package: IntegrationTests.coreLogic.base** : For each screen there would be corresponding coreLogic class. Classes under this package contains abstract methods which are defined in their respective classes in coreLogic.android and coreLogic.ios package. Eg: LoginCoreLogic.
 				
-**Package: IntegrationTests.phone.coreLogic.android** : For each base coreLogic there would be corresponding android coreLogic (e.g.  - AndroidLoginCoreLogic)
+**Package: IntegrationTests.coreLogic.android** : For each base coreLogic there would be corresponding android coreLogic (e.g.  - AndroidLoginCoreLogic)
 where abstract method declared in base class are defined. Corresponding base class, coreLogic will be extended by android coreLogic class. E.g. for LoginCoreLogic base class,  AndroidLoginCoreLogic will extend LoginCoreLogic.
 .
-**Package: IntegrationTests.phone.coreLogic.ios** : For each base coreLogic class there would be corresponding ios coreLogic class (e.g.  - IOSLoginCoreLogic)
+**Package: IntegrationTests.coreLogic.ios** : For each base coreLogic class there would be corresponding ios coreLogic class (e.g.  - IOSLoginCoreLogic)
 where abstract method declared in base class are defined.Corresponding base coreLogic class will be extended by ios coreLogic class. E.g. for LoginCoreLogic base class, IOSLoginCoreLogic will extend LoginCoreLogic.
 
 
-**Package: IntegrationTests.phone.coreLogic.tests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
+**Package: IntegrationTests.coreLogic.tests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
 runtime of the coreLogic classes required in the test. Object creation happens depending on the platform passed through invokeDriver parameter (android or ios). Then test calls methods defined in the coreLogic (of which object is created).
 
 ![image](UIAutomation/images/9.png)
-
-**execute_android_test.xml** : Here you define execution order of your android tests. execute_android_test.xml file name is added as target in build.xml to run android test. 
-
-**execute_iOS_test.xml** : Here you define execution order of your iOS tests. execute_iOS_test.xml file name is added as target in build.xml to run android test. 
-
 
 
 ###Javadoc of the project can be found in doc folder. It contains information all classes and methods.
@@ -156,7 +151,7 @@ For iOS locators,  it would be under screens->ios->IOSLoginScreen.
 
 #How to execute a test
 
-Ant is used as build tool (can be downloaded from here). build.xml file is present in base directory and have targets to android and iOS Test.
+Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
 
 Connect your device to your machine or start the emulator.
 
@@ -164,13 +159,13 @@ Connect your device to your machine or start the emulator.
 
 ######Run below commands to execute android test:
 
-$ cd UIAutomation/
-$ ant executeAndroidTest 
+$ cd mobileautomationframework/
+$ mvn test -Dos=android 
 
 *Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
 
 ######Run below commands to execute iOS test:
 
-$ cd UIAutomation/
-$ ant executeiOSTest 
+$ cd mobileautomationframework/
+$ mvn test -Dos=iOS 
 
