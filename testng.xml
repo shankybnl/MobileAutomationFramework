@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Appium-Framework">
+<suite name="mobile-automation-framework">
 	<parameter name="os" value="${os}" />
 	
 	 <listeners>
@@ -7,7 +7,7 @@
 		<listener class-name="UITestFramework.retryLogic.TestListener" />
 	</listeners>
 
-	<test name="mobile-tests">
+	<test name="automation-tests">
 		<packages>
 			<package name="tests" />
 		</packages>
