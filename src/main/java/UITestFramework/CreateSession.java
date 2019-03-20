@@ -36,7 +36,7 @@ public class CreateSession  {
 	public WebDriver driver = null;
 	Properties configFile ;
 	protected static Properties lobConfigProp = new Properties();
-	protected static Properties localeConfigProp = new Properties();
+	public static Properties localeConfigProp = new Properties();
 	protected FileInputStream configFis, lobConfigFis, localeConfigFis;	
 	public Properties testDataFile;
 	private final String CONFIG_FILE_PATH="//src//main//java//config//config.properties";

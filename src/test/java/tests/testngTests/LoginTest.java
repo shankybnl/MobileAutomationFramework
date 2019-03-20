@@ -1,4 +1,4 @@
-package tests;
+package tests.testngTests;
 import logger.Log;
 
 import org.testng.annotations.BeforeMethod;
@@ -50,6 +50,4 @@ public class LoginTest extends CreateSession {
 		loginCoreLogic.verifyLoginScenario(userName, password);
 		Log.info("Verified the login");
 	}
-	
-	
 }
