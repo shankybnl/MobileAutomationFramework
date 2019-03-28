@@ -2,9 +2,10 @@
 <suite name="mobile-automation-framework">
 	<parameter name="os" value="${os}" />
 
+
 	<test name="automation-tests">
-		<packages>
-			<package name="tests.testngTests" />
-		</packages>
+		<classes>
+			<class name="cucumberIntegrationTests.CucumberRunnerUtil" />
+		</classes>
 	</test>
 </suite>

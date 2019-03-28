@@ -1,12 +1,12 @@
 package cucumberIntegrationTests.stepDefinitions.common;
 
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumberIntegrationTests.CreateSessionCucumber;
 import cucumberIntegrationTests.screens.android.AndroidLoginScreen;
 import cucumberIntegrationTests.screens.iOS.IOSLoginScreen;
-import UITestFramework.CreateSession;
-import cucumber.api.java.en.Given;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Properties;
@@ -18,24 +18,21 @@ public class LoginSteps {
     String userName;
     String password;
     Properties configFileObject;
+    BaseSteps baseStepsContext;
 
 
-    public LoginSteps(CreateSession createSession) {
-        driver = createSession.driver;
-        configFileObject = CreateSession.localeConfigProp;
-    }
 
-    @Given("User has slideshare {string} app")
-    public void userHasSlideshareApp(String invokeDriver) {
-        if (invokeDriver.equalsIgnoreCase("android")) {
-            androidLoginScreen = new AndroidLoginScreen(driver);
-        } else if (invokeDriver.equalsIgnoreCase("iOS")) {
-            iosLoginScreen = new IOSLoginScreen(driver);
-        }
+    public LoginSteps(BaseSteps baseSteps) {
+        baseStepsContext = baseSteps;
+        driver = baseStepsContext.driver;
+        androidLoginScreen = baseSteps.androidLoginScreen;
+        iosLoginScreen = baseSteps.iosLoginScreen;
+        configFileObject = CreateSessionCucumber.localeConfigProp;
     }
 
 
-    @And("username and password is {string}")
+
+    @And("user has \"([^\"]*)\" username and password")
     public void usernameAndPasswordIs(String credentialsValidations) {
         if(credentialsValidations.equalsIgnoreCase("valid")){
             userName = configFileObject.getProperty("userName");
@@ -56,14 +53,14 @@ public class LoginSteps {
         androidLoginScreen.findElement(androidLoginScreen.password).sendKeys(password);
     }
 
-    @And("taps on {string} button")
+    @And("taps on \"([^\"]*)\" button")
     public void tapsOnButton(String arg0) {
         androidLoginScreen.findElement(androidLoginScreen.signInButton).click();
 
 
     }
 
-    @Then("{string} button should be visible")
+    @Then("\"([^\"]*)\" button should be visible")
     public void buttonShouldBeVisible(String button) {
         //	verify if "Get Started" button is displayed
         if(button.equalsIgnoreCase("Get Started")) {
@@ -85,4 +82,7 @@ public class LoginSteps {
         // long press search icon
         androidLoginScreen.longPress(androidLoginScreen.searchIcon);
     }
+
+
+
 }
