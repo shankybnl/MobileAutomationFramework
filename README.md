@@ -2,7 +2,7 @@ For any help/queries on this framework. Please feel free to drop an email @ shan
 If you find it helpful, **share** with your network and **star** the repository :)
 Cheers!
 
-# Mobile automated testing framework (Android and iOS)
+# Mobile automation testing framework (Android and iOS) - supports both cucumber and testng tests
 
 *Single code base framework to test android and iOS app using appium. It is a boilerplate code. Clone it and you are good to go!*
 
