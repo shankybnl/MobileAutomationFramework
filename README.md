@@ -6,7 +6,9 @@ Cheers!
 
 *Single code base framework to test android and iOS app using appium. It is a boilerplate code. Clone it and you are good to go!*
 
-[Want to write cucumber BDD tests](#cucumber-bdd-tests)
+
+
+## Framework with testng tests setup and execution ([cucumber BDD tests here](#cucumber-bdd-tests))
 
 **Package : UITestFramework** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
@@ -198,9 +200,9 @@ $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
 
 **CucumberRunnerUtil.java**: cucumberTestng.xml invokes this class. It has all the configuration for cucumber to execute tests and testng annotations to leverage their benefits.
 
-![image](UIAutomation/images/22.png)
+![image](UIAutomation/images/23.png)
 
-**CreateSessionCucumber.java** : Similar to [Create session class](**CreateSession.java**) to create driver object and loading test data etc.
+**CreateSessionCucumber.java** : Similar to [Create session class](**CreateSession.java) to create driver object and loading test data etc.
 
 ##### How to execute a test
 
