@@ -6,6 +6,7 @@ Cheers!
 
 *Single code base framework to test android and iOS app using appium. It is a boilerplate code. Clone it and you are good to go!*
 
+[Want to write cucumber BDD tests](#cucumber-bdd-tests)
 
 **Package : UITestFramework** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
@@ -97,10 +98,10 @@ runtime of the coreLogic classes required in the test. Object creation happens d
 
 
 
-###Javadoc of the project can be found in doc folder. It contains information all classes and methods.
+### Javadoc of the project can be found in doc folder. It contains information all classes and methods.
 
 
-#Execution flow of a Test
+## Execution flow of test test
 
 Below is execution flow with help of login test as example.
 
@@ -151,7 +152,7 @@ IOSLoginCoreLogic would be under iOS -> IOSLoginCoreLogic.
 Similar thing should be done for element locators. There is no base folder in case of screens.For android locators, it would be under screens->android->AndroidLoginScreen. 
 For iOS locators,  it would be under screens->ios->IOSLoginScreen. 
 
-#How to execute a test
+##### How to execute a test
 
 Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
 
@@ -159,16 +160,68 @@ Connect your device to your machine or start the emulator.
 
 *Note: start appium server on your machine if not included programatically*
 
-######Run below commands to execute android testng test:
+###### Run below commands to execute android testng test:
 
 $ cd mobileautomationframework/
 $ mvn test -Dos=android -Dsurefire.suiteXmlFiles=testng.xml
 
 *Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
 
-######Run below commands to execute iOS testng test:
+###### Run below commands to execute iOS testng test:
 
 $ cd mobileautomationframework/
 $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
+
+                                            xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Cucumber BDD tests
+
+![image](UIAutomation/images/20.png)
+
+**Package : cucumberIntegrationTests** :This package has sub-packages: screens and stepDefinitions. It also includes CucumberRunnerUtil class and CreateSessionCucumber class which are required to keep configurations and creating appium instance respectively.
+
+![image](UIAutomation/images/21.png)
+
+**Package: IntegrationTests.screens** : Classes in this package contains locators which are being used in coreLogic classes. Each page in mobile application is mapped to screen. E.g. for android login page, its AndroidLoginScreen. Segregated the locators on the bases of platform: android or iOS
+
+**Package: IntegrationTests.screens.android** : Each screen on andriod app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - AndroidLoginScreen. Each android screen class extends GenericMethods.java. 
+
+**Package: IntegrationTests.screens.ios** : Each screen on ios app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - IOSLoginScreen etc. Each iOS screen class extends GenericMethods.java. 
+
+![image](UIAutomation/images/22.png)
+
+**Package: stepDefinitions.common** : This package has all classes with common methods which can be used across android and iOS platform. It also has BaseSteps class which has initiation and appium driver creation for android or iOS platform.
+
+**Package: stepDefinitions.android** : It should contain all the stepDefinitions for android features. e.g. AndroidLoginSteps
+
+**Package: stepDefinitions.iOS** : It should contain all the stepDefinitions for iOS features. e.g. iOSLoginSteps
+
+**CucumberRunnerUtil.java**: cucumberTestng.xml invokes this class. It has all the configuration for cucumber to execute tests and testng annotations to leverage their benefits.
+
+![image](UIAutomation/images/22.png)
+
+**CreateSessionCucumber.java** : Similar to [Create session class](**CreateSession.java**) to create driver object and loading test data etc.
+
+##### How to execute a test
+
+Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
+
+Connect your device to your machine or start the emulator.
+
+*Note: start appium server on your machine if not included programatically*
+
+###### Run below commands to execute android testng test:
+
+$ cd mobileautomationframework/
+$ mvn test -Dos=android -Dsurefire.suiteXmlFiles=cucumberTestng.xml
+
+*Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
+
+###### Run below commands to execute iOS testng test:
+
+$ cd mobileautomationframework/
+$ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=cucumberTestng.xml
+
+
 
 
