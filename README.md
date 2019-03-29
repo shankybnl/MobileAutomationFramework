@@ -84,15 +84,17 @@ findElements(By locator) - method to find all the elements of specific locator
 				
 **Package: IntegrationTests.coreLogic.android** : For each base coreLogic there would be corresponding android coreLogic (e.g.  - AndroidLoginCoreLogic)
 where abstract method declared in base class are defined. Corresponding base class, coreLogic will be extended by android coreLogic class. E.g. for LoginCoreLogic base class,  AndroidLoginCoreLogic will extend LoginCoreLogic.
-.
+
 **Package: IntegrationTests.coreLogic.ios** : For each base coreLogic class there would be corresponding ios coreLogic class (e.g.  - IOSLoginCoreLogic)
 where abstract method declared in base class are defined.Corresponding base coreLogic class will be extended by ios coreLogic class. E.g. for LoginCoreLogic base class, IOSLoginCoreLogic will extend LoginCoreLogic.
 
 
-**Package: IntegrationTests.coreLogic.tests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
+![image](UIAutomation/images/9.png)
+
+
+**Package: tests.testngTests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
 runtime of the coreLogic classes required in the test. Object creation happens depending on the platform passed through invokeDriver parameter (android or ios). Then test calls methods defined in the coreLogic (of which object is created).
 
-![image](UIAutomation/images/9.png)
 
 
 ###Javadoc of the project can be found in doc folder. It contains information all classes and methods.
@@ -157,15 +159,16 @@ Connect your device to your machine or start the emulator.
 
 *Note: start appium server on your machine if not included programatically*
 
-######Run below commands to execute android test:
+######Run below commands to execute android testng test:
 
 $ cd mobileautomationframework/
-$ mvn test -Dos=android 
+$ mvn test -Dos=android -Dsurefire.suiteXmlFiles=testng.xml
 
 *Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
 
-######Run below commands to execute iOS test:
+######Run below commands to execute iOS testng test:
 
 $ cd mobileautomationframework/
-$ mvn test -Dos=iOS 
+$ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
+
 
