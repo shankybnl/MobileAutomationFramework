@@ -6,6 +6,7 @@ Cheers!
 
 *Single code base framework to test android and iOS app using appium. It is a boilerplate code. Clone it and you are good to go!*
 
+[Want to write cucumber BDD tests](#cucumber-bdd-tests)
 
 **Package : UITestFramework** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
@@ -159,16 +160,33 @@ Connect your device to your machine or start the emulator.
 
 *Note: start appium server on your machine if not included programatically*
 
-######Run below commands to execute android testng test:
+###### Run below commands to execute android testng test:
 
 $ cd mobileautomationframework/
 $ mvn test -Dos=android -Dsurefire.suiteXmlFiles=testng.xml
 
 *Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
 
-######Run below commands to execute iOS testng test:
+###### Run below commands to execute iOS testng test:
 
 $ cd mobileautomationframework/
 $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
+
+
+# Cucumber BDD tests
+
+![image](UIAutomation/images/20.png)
+
+**Package : cucumberIntegrationTests** :This package has sub-packages: screens and stepDefinitions. It also includes CucumberRunnerUtil class and CreateSessionCucumber class which are required to keep configurations and creating appium instance respectively.
+
+![image](UIAutomation/images/21.png)
+
+**Package: IntegrationTests.screens** : Classes in this package contains locators which are being used in coreLogic classes. Each page in mobile application is mapped to screen. E.g. for android login page, its AndroidLoginScreen. Segregated the locators on the bases of platform: android or iOS
+
+**Package: IntegrationTests.screens.android** : Each screen on andriod app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - AndroidLoginScreen. Each android screen class extends GenericMethods.java. 
+
+**Package: IntegrationTests.screens.ios** : Each screen on ios app will be having as screen class under this package. It contains all the locators which are visible on that screen. E.g. - IOSLoginScreen etc. Each iOS screen class extends GenericMethods.java. 
+
+![image](UIAutomation/images/22.png)
 
 
