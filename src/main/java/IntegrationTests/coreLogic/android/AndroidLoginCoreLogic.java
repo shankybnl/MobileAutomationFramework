@@ -36,11 +36,10 @@ public class AndroidLoginCoreLogic extends LoginCoreLogic {
         androidLoginScreen.findElement(androidLoginScreen.signInButton).click();
 
 
-        Log.info("Login Successful");
-
 
         //	verify if "Get Started" button is displayed
         androidLoginScreen.waitForVisibility(androidLoginScreen.startedButton);
+        Log.info("Login Successful");
         androidLoginScreen.findElement(androidLoginScreen.startedButton).click();
         androidLoginScreen.waitForVisibility(androidLoginScreen.titleBar);
 

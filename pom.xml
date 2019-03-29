@@ -11,6 +11,8 @@
     <name>MobileAutomationFramework</name>
     <url>http://maven.apache.org</url>
 
+
+
 <build><plugins>
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -19,7 +21,7 @@
         <configuration>
             <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
             <suiteXmlFiles>
-                <suiteXmlFile>testng.xml</suiteXmlFile>
+                <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
             </suiteXmlFiles>
         </configuration>
     </plugin>
@@ -119,6 +121,42 @@
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>6.1.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.2.5</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>1.2.5</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
         </dependency>
 
 
