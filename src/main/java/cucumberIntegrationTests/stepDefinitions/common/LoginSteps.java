@@ -25,8 +25,8 @@ public class LoginSteps {
     public LoginSteps(BaseSteps baseSteps) {
         baseStepsContext = baseSteps;
         driver = baseStepsContext.driver;
-        androidLoginScreen = baseSteps.androidLoginScreen;
-        iosLoginScreen = baseSteps.iosLoginScreen;
+        androidLoginScreen = baseStepsContext.androidLoginScreen;
+        iosLoginScreen = baseStepsContext.iosLoginScreen;
         configFileObject = CreateSessionCucumber.localeConfigProp;
     }
 
