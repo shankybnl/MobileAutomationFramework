@@ -46,7 +46,6 @@ public class CreateSession  {
 
 
 
-
 	/** 
 	 * this method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
 	 * @throws Exception Unable to start appium server

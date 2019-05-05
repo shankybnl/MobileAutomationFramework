@@ -73,7 +73,7 @@ public class GenericMethods {
             return true;
         } catch (TimeoutException e) {
             System.out.println("Element is not visible: " + targetElement);
-            throw new TimeoutException(e.getMessage());
+            throw e;
 
         }
     }
@@ -93,7 +93,7 @@ public class GenericMethods {
             System.out.println("Element is still visible: " + targetElement);
             System.out.println();
             System.out.println(e.getMessage());
-            throw new TimeoutException();
+            throw e;
 
         }
     }
@@ -125,7 +125,7 @@ public class GenericMethods {
             return element;
         } catch (NoSuchElementException e) {
             Log.logError(this.getClass().getName(), "findElement", "Element not found" + locator);
-            throw new NoSuchElementException(e.getMessage());
+            throw e;
         }
     }
 
@@ -141,7 +141,7 @@ public class GenericMethods {
             return element;
         } catch (NoSuchElementException e) {
             Log.logError(this.getClass().getName(), "findElements", "element not found" + locator);
-            throw new NoSuchElementException(e.getMessage());
+            throw e;
         }
     }
 
@@ -156,7 +156,7 @@ public class GenericMethods {
             String alertText = alert.getText();
             return alertText;
         } catch (NoAlertPresentException e) {
-            throw new NoAlertPresentException();
+            throw e;
         }
     }
 
@@ -172,7 +172,7 @@ public class GenericMethods {
             driver.switchTo().alert();
             return true;
         } catch (NoAlertPresentException e) {
-            throw new NoAlertPresentException();
+            throw e;
         }
     }
 
@@ -269,7 +269,7 @@ public class GenericMethods {
             Log.info("Long press successful on element: " + element);
         } catch (NoSuchElementException e) {
             Log.logError(this.getClass().getName(), "findElement", "Element not found" + locator);
-            throw new NoSuchElementException(e.getMessage());
+            throw e;
         }
 
     }
@@ -306,7 +306,7 @@ public class GenericMethods {
             Log.info("Long press successful on element: " + element + "on coordinates" + "( " + x + "," + y + " )");
         } catch (NoSuchElementException e) {
             Log.logError(this.getClass().getName(), "findElement", "Element not found" + locator);
-            throw new NoSuchElementException(e.getMessage());
+            throw e;
         }
 
     }
