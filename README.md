@@ -1,5 +1,5 @@
-For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com 
-If you find it helpful, **share** with your network and **star** the repository :)
+Facing an issue while executing the tests, please log the [issue](https://github.com/shankybnl/MobileAutomationFramework/issues). 
+For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com If you find it helpful, **share** with your network and **star** the repository :)
 Cheers!
 
 # Mobile automation testing framework (Android and iOS) - supports both cucumber and testng tests
