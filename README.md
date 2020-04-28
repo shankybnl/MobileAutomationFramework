@@ -1,5 +1,6 @@
 Facing an issue while executing the tests, please log the [issue](https://github.com/shankybnl/MobileAutomationFramework/issues). 
-For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com If you find it helpful, **share** with your network and **star** the repository :)
+For any help/queries on this framework. Please feel free to drop an email @ shankybnl@gmail.com If you find it helpful,  **star** the repository and **share** with your network on LinkedIn,Twitter etc :)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/shankysharma/)
 Cheers!
 
 # Mobile automation testing framework (Android and iOS) - supports both cucumber and testng tests
@@ -212,14 +213,14 @@ Connect your device to your machine or start the emulator.
 
 *Note: start appium server on your machine if not included programatically*
 
-###### Run below commands to execute android testng test:
+###### Run below commands to execute android cucumber test:
 
 $ cd mobileautomationframework/
 $ mvn test -Dos=android -Dsurefire.suiteXmlFiles=cucumberTestng.xml
 
 *Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
 
-###### Run below commands to execute iOS testng test:
+###### Run below commands to execute iOS cucumber test:
 
 $ cd mobileautomationframework/
 $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=cucumberTestng.xml
