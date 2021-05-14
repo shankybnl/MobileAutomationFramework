@@ -20,9 +20,12 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 
@@ -44,7 +47,30 @@ public class CreateSession  {
 	Properties configProp = new Properties();
 	String OS;
 
+	public WebDriver getDriver() {
+        return driver;
+}
 
+@BeforeMethod
+public void createDriver() {
+        WebDriver driver= getDriver();
+}
+
+@AfterMethod
+    public void tearDownDriver() {
+    if (driver != null)
+    {
+            try
+            {
+                driver.quit();
+            }
+            catch (WebDriverException e) {
+                System.out.println("***** CAUGHT EXCEPTION IN DRIVER TEARDOWN *****");
+                System.out.println(e);
+            }
+
+    }
+}	
 
 	/** 
 	 * this method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
@@ -143,7 +169,7 @@ public class CreateSession  {
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
 		capabilities.setCapability("automationName", "UiAutomator2");
-		driver = new AndroidDriver( new URL("http://localhost:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 	}
 
