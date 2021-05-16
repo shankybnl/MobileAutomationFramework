@@ -40,7 +40,6 @@ public class TestListener extends CreateSession implements ITestListener {
    
 	@Override
 	public void onTestFailure(ITestResult result) { 
-	
 		Object TestListener = result.getInstance();
 		WebDriver webDriver = ((CreateSession) TestListener).getDriver();
 		if (webDriver != null)
@@ -63,8 +62,7 @@ public class TestListener extends CreateSession implements ITestListener {
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {   }
 
-	public void onStart(ITestContext context) { 
-	}
+	public void onStart(ITestContext context) { }
 
 }
 
