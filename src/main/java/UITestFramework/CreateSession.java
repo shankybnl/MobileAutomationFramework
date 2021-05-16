@@ -46,31 +46,14 @@ public class CreateSession  {
 	protected File file = new File("");
 	Properties configProp = new Properties();
 	String OS;
-
+	/** 
+	 * Returns the instance of the webdriver. 
+	 * @return webdriver instance 
+	 */
 	public WebDriver getDriver() {
         return driver;
 }
-
-@BeforeMethod
-public void createDriver() {
-        WebDriver driver= getDriver();
-}
-
-@AfterMethod
-    public void tearDownDriver() {
-    if (driver != null)
-    {
-            try
-            {
-                driver.quit();
-            }
-            catch (WebDriverException e) {
-                System.out.println("***** CAUGHT EXCEPTION IN DRIVER TEARDOWN *****");
-                System.out.println(e);
-            }
-
-    }
-}	
+	
 
 	/** 
 	 * this method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
