@@ -46,7 +46,7 @@ public class TestListener extends CreateSession implements ITestListener {
 		{
 			File scr = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);		
 			String filename =  new SimpleDateFormat("yyyyMMddhhmmss'.jpg'").format(new Date());
-    			File dest = new File("E:\\" + filename); //Directory where Screenshot get saved.
+    			File dest = new File("./Screenshots/" + filename); //Directory where Screenshot get saved.
    			try 
 			{
 				FileUtils.copyFile(scr, dest);
