@@ -20,9 +20,12 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 
@@ -43,8 +46,14 @@ public class CreateSession  {
 	protected File file = new File("");
 	Properties configProp = new Properties();
 	String OS;
-
-
+	/** 
+	 * Returns the instance of the webdriver. 
+	 * @return webdriver instance 
+	 */
+	public WebDriver getDriver() {
+        return driver;
+}
+	
 
 	/** 
 	 * this method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
@@ -143,7 +152,7 @@ public class CreateSession  {
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
 		capabilities.setCapability("automationName", "UiAutomator2");
-		driver = new AndroidDriver( new URL("http://localhost:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 	}
 
