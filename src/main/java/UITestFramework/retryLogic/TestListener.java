@@ -19,6 +19,8 @@ import UITestFramework.CreateSession;
 
 public class TestListener extends CreateSession implements ITestListener {
 	
+	ExtentReports extent =ExtentReportR.extentReportGenerator();
+    ExtentTest test;
 	
 	public void onFinish(ITestContext context) {
 		Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
@@ -32,11 +34,17 @@ public class TestListener extends CreateSession implements ITestListener {
 				}
 			}
 		}
+		extent.flush();
 	}
 
-	public void onTestStart(ITestResult result) {   }
+	public void onTestStart(ITestResult result) {  
+		test= extent.createTest(result.getMethod().getMethodName());
 
-	public void onTestSuccess(ITestResult result) {   }
+	}
+
+	public void onTestSuccess(ITestResult result) {   
+		test.log(Status.PASS, "Successfull");
+	}
    
 	@Override
 	public void onTestFailure(ITestResult result) { 
@@ -56,6 +64,7 @@ public class TestListener extends CreateSession implements ITestListener {
 				e.printStackTrace();
 			}	
 		}
+		test.fail(result.getThrowable()); 
 	   }
 
 	public void onTestSkipped(ITestResult result) {   }
