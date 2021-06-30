@@ -1,11 +1,8 @@
 package logger;
 
+import org.apache.log4j.*;
+
 import java.io.IOException;
-import org.apache.log4j.ConsoleAppender;
-import org.apache.log4j.FileAppender;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PatternLayout;
 
 /**
  * contains all the methods to show the logs on console 
@@ -39,21 +36,21 @@ public class Log
 	 * @param methodName name of method in which error occurred.
 	 * @param exception stack trace of exception
 	 */
-	public static void logError (String className,String methodName,String exception) 
+	public static void error (String className,String methodName,String exception)
 	{	
 		LOGGER.addAppender(appender);
 		LOGGER.setLevel((Level) Level.INFO);
-		LOGGER.info("ClassName :"+className);
-		LOGGER.info("MethodName :"+methodName );
-		LOGGER.info("Exception :" +exception);
-		LOGGER.info("-----------------------------------------------------------------------------------");
+		LOGGER.error("ClassName :"+className);
+		LOGGER.error("MethodName :"+methodName );
+		LOGGER.error("Exception :" +exception);
+		LOGGER.error("-----------------------------------------------------------------------------------");
 	}
 	
 	/**
 	 * method to display information in logs
 	 * @param message message to be displayed
 	 */
-	public static void info(String message){
+	public static void info (String message){
 		consoleAppender.setName("Console");
 		LOGGER.addAppender(consoleAppender);
 		LOGGER.addAppender(appender);

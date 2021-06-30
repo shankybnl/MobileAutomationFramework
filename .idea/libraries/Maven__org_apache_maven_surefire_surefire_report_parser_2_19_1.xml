@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.maven.surefire:surefire-report-parser:2.19.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

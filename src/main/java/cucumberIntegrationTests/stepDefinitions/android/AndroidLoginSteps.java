@@ -1,6 +1,6 @@
 package cucumberIntegrationTests.stepDefinitions.android;
 
-import UITestFramework.CreateSession;
+import UITestFramework.retryLogic.CreateSession;
 import cucumberIntegrationTests.screens.android.AndroidLoginScreen;
 
 public class AndroidLoginSteps {

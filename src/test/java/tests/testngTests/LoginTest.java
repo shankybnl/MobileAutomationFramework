@@ -1,6 +1,7 @@
 package tests.testngTests;
-import logger.Log;
 
+import UITestFramework.retryLogic.CreateSession;
+import logger.Log;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -8,7 +9,6 @@ import org.testng.annotations.Test;
 import IntegrationTests.coreLogic.base.*;
 import IntegrationTests.coreLogic.android.*;
 import IntegrationTests.coreLogic.iOS.*;
-import UITestFramework.CreateSession;
 
 /**
  * automated test to verify login to android/iOS app.

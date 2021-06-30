@@ -1,5 +1,7 @@
 package UITestFramework;
 
+import logger.Log;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,11 +9,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
-
-import logger.Log;
-
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Statement;
+import java.sql.Statement;
+import java.sql.Connection;
 
 public class MysqlDatabase {
 
@@ -79,7 +78,7 @@ public class MysqlDatabase {
 			return rs;
 		}
 		catch(Exception e){
-			Log.logError(this.getClass().getName(), "readProdDatabase", "Exception occured while reading beta databse");
+			Log.error(this.getClass().getName(), "readProdDatabase", "Exception occured while reading beta databse");
 			throw new Exception(e.getMessage());
 		}
 

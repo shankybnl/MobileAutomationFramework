@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="mobile-automation-framework">
-	<parameter name="os" value="${os}" />
+	<parameter name="os" value="android" />
 	<listeners>
 	<listener class-name="UITestFramework.retryLogic.TestListener"/> 
 	</listeners>

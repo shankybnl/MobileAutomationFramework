@@ -1,7 +1,6 @@
 package cucumberIntegrationTests.stepDefinitions.iOS;
 
-import UITestFramework.CreateSession;
-import cucumberIntegrationTests.screens.android.AndroidLoginScreen;
+import UITestFramework.retryLogic.CreateSession;
 import cucumberIntegrationTests.screens.iOS.IOSLoginScreen;
 
 public class iOSLoginSteps {

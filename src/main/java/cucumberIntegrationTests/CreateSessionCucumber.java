@@ -11,9 +11,6 @@ import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,7 +18,6 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Optional;
 import java.util.Properties;
 
 
@@ -59,7 +55,7 @@ public class CreateSessionCucumber {
 			Log.info("Appium server started successfully");
 		}
 		catch (Exception e) {
-			Log.logError(getClass().getName(), "startAppium", "Unable to start appium server");
+			Log.error(getClass().getName(), "startAppium", "Unable to start appium server");
 			throw new Exception(e.getMessage());
 		}
 	}
@@ -77,7 +73,7 @@ public class CreateSessionCucumber {
 
 		}
 		catch (Exception e) {
-			Log.logError(getClass().getName(), "stopAppium", "Unable to stop appium server");
+			Log.error(getClass().getName(), "stopAppium", "Unable to stop appium server");
 			throw new Exception(e.getMessage());
 		}
 	}

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.saucelabs:sauce_java_common:2.1.23">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/saucelabs/sauce_java_common/2.1.23/sauce_java_common-2.1.23.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/saucelabs/sauce_java_common/2.1.23/sauce_java_common-2.1.23-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/saucelabs/sauce_java_common/2.1.23/sauce_java_common-2.1.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

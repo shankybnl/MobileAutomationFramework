@@ -124,7 +124,7 @@ public class GenericMethods {
             WebElement element = driver.findElement(locator);
             return element;
         } catch (NoSuchElementException e) {
-            Log.logError(this.getClass().getName(), "findElement", "Element not found" + locator);
+            Log.error(this.getClass().getName(), "findElement", "Element not found" + locator);
             throw e;
         }
     }
@@ -140,7 +140,7 @@ public class GenericMethods {
             List<WebElement> element = driver.findElements(locator);
             return element;
         } catch (NoSuchElementException e) {
-            Log.logError(this.getClass().getName(), "findElements", "element not found" + locator);
+            Log.error(this.getClass().getName(), "findElements", "element not found" + locator);
             throw e;
         }
     }
@@ -268,7 +268,7 @@ public class GenericMethods {
             touch.longPress(longPressOptions).release().perform();
             Log.info("Long press successful on element: " + element);
         } catch (NoSuchElementException e) {
-            Log.logError(this.getClass().getName(), "findElement", "Element not found" + locator);
+            Log.error(this.getClass().getName(), "findElement", "Element not found" + locator);
             throw e;
         }
 
@@ -305,7 +305,7 @@ public class GenericMethods {
             touch.longPress(longPressOptions).release().perform();
             Log.info("Long press successful on element: " + element + "on coordinates" + "( " + x + "," + y + " )");
         } catch (NoSuchElementException e) {
-            Log.logError(this.getClass().getName(), "findElement", "Element not found" + locator);
+            Log.error(this.getClass().getName(), "findElement", "Element not found" + locator);
             throw e;
         }
 

@@ -1,7 +1,6 @@
 package IntegrationTests.coreLogic.android;
 
 import logger.Log;
-
 import org.openqa.selenium.WebDriver;
 
 
