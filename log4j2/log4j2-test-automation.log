@@ -1,0 +1,30 @@
+[INFO ] 2021-07-02 17:25:53.732 [main] Log - Appium started on http://0.0.0.0:5654/wd/hub
+[INFO ] 2021-07-02 17:25:53.736 [main] Log - Appium server started successfully
+[INFO ] 2021-07-02 17:25:54.076 [main] Log - Creating driver
+[INFO ] 2021-07-02 17:26:08.544 [main] Log - Android driver created
+[INFO ] 2021-07-02 17:26:16.083 [main] Log - Running login test
+[INFO ] 2021-07-02 17:26:16.083 [main] Log - Verified the login
+[INFO ] 2021-07-02 17:26:22.019 [main] Log - Shutting down driver
+[INFO ] 2021-07-02 17:26:22.543 [main] Log - Creating driver
+[INFO ] 2021-07-02 17:26:34.341 [main] Log - Android driver created
+[INFO ] 2021-07-02 17:26:40.429 [main] Log - Running login test
+[INFO ] 2021-07-02 17:26:40.430 [main] Log - Verified the login
+[INFO ] 2021-07-02 17:26:46.942 [main] Log - Shutting down driver
+[INFO ] 2021-07-02 17:26:47.559 [main] Log - Test not passing from here
+[INFO ] 2021-07-02 17:26:47.611 [main] Log - Appium server stopped
+[INFO ] 2021-07-02 17:26:47.612 [main] Log - Appium server stopped successfully
+[INFO ] 2021-07-02 17:48:34.182 [main] Log - Appium started on http://0.0.0.0:18939/wd/hub
+[INFO ] 2021-07-02 17:48:34.186 [main] Log - Appium server started successfully
+[INFO ] 2021-07-02 17:48:34.536 [main] Log - Creating driver
+[INFO ] 2021-07-02 17:48:51.593 [main] Log - Android driver created
+[INFO ] 2021-07-02 17:48:59.213 [main] Log - Running login test
+[INFO ] 2021-07-02 17:48:59.213 [main] Log - Verified the login
+[INFO ] 2021-07-02 17:49:05.232 [main] Log - Shutting down driver
+[INFO ] 2021-07-02 17:49:06.161 [main] Log - Creating driver
+[INFO ] 2021-07-02 17:49:19.079 [main] Log - Android driver created
+[INFO ] 2021-07-02 17:49:25.246 [main] Log - Running login test
+[INFO ] 2021-07-02 17:49:25.246 [main] Log - Verified the login
+[INFO ] 2021-07-02 17:49:31.882 [main] Log - Shutting down driver
+[INFO ] 2021-07-02 17:49:32.668 [main] Log - Test not passing from here
+[INFO ] 2021-07-02 17:49:32.726 [main] Log - Appium server stopped
+[INFO ] 2021-07-02 17:49:32.726 [main] Log - Appium server stopped successfully

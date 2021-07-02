@@ -3,7 +3,7 @@ package cucumberIntegrationTests;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import logger.Log;
+import Reports.Log;
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
@@ -55,7 +55,7 @@ public class CreateSessionCucumber {
 			Log.info("Appium server started successfully");
 		}
 		catch (Exception e) {
-			Log.error(getClass().getName(), "startAppium", "Unable to start appium server");
+			Log.error("Unable to start appium server");
 			throw new Exception(e.getMessage());
 		}
 	}
@@ -73,7 +73,7 @@ public class CreateSessionCucumber {
 
 		}
 		catch (Exception e) {
-			Log.error(getClass().getName(), "stopAppium", "Unable to stop appium server");
+			Log.error("Unable to stop appium server");
 			throw new Exception(e.getMessage());
 		}
 	}
@@ -92,7 +92,7 @@ public class CreateSessionCucumber {
 
 		propertiesFileLoad(os);
 
-		File propertiesFile = new File(file.getAbsoluteFile() + "//src//main//java//log4j.properties");
+		File propertiesFile = new File(file.getAbsoluteFile() + "//src//main//java//log4j2.properties");
 		PropertyConfigurator.configure(propertiesFile.toString());
 		Log.info("--------------------------------------");
 
@@ -246,7 +246,7 @@ public class CreateSessionCucumber {
 		else if (os.contains("mac os x")){
 			String[] command ={"/usr/bin/killall","-KILL","node"};  
 			Runtime.getRuntime().exec(command);  
-			Log.info("Appium server stopped");  
+			Log.info("Appium server stopped");
 		}
 		else if (os.contains("linux")){
 			// need to add it

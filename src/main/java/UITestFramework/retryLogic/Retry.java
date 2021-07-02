@@ -1,6 +1,7 @@
 package UITestFramework.retryLogic;
 
-import logger.Log;
+import Reports.Log;
+
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 

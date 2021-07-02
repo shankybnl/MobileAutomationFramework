@@ -6,7 +6,7 @@
 
     <groupId>com.github</groupId>
     <artifactId>mobile-automation-framework</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>3.1.6-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>MobileAutomationFramework</name>
     <url>http://maven.apache.org</url>
@@ -21,6 +21,7 @@
         <configuration>
             <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
             <suiteXmlFiles>
+                <!--suppress UnresolvedMavenProperty -->
                 <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
             </suiteXmlFiles>
         </configuration>
@@ -33,11 +34,7 @@
         <configuration>
             <source>1.8</source>
             <target>1.8</target>
-            <systemPropertyVariables>
-                <property>
-                    <invokeDriver>${invokeDriver}</invokeDriver>
-                </property>
-            </systemPropertyVariables>
+
         </configuration>
     </plugin>
 
@@ -73,28 +70,26 @@
             <version>1.2.17</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-configuration2</artifactId>
             <version>2.1.1</version>
         </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/com.saucelabs/sauce_java_common -->
-        <dependency>
-            <groupId>com.saucelabs</groupId>
-            <artifactId>sauce_java_common</artifactId>
-            <version>2.1.23</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.saucelabs/sauce_testng -->
-        <dependency>
-            <groupId>com.saucelabs</groupId>
-            <artifactId>sauce_testng</artifactId>
-            <version>2.1.23</version>
-        </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
@@ -123,35 +118,6 @@
             <version>6.1.0</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>1.2.5</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.2.5</version>
-            <scope>compile</scope>
-        </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -159,6 +125,36 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports-cucumber4-adapter</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.8</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.8</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

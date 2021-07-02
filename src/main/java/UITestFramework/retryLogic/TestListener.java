@@ -1,69 +1,72 @@
 package UITestFramework.retryLogic;
 
-
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Set;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import Reports.ExtentReportManager;
+import UITestFramework.CreateSession;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
+import java.io.IOException;
+
+
+
 public class TestListener extends CreateSession implements ITestListener {
-	
-	
-	public void onFinish(ITestContext context) {
-		Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
-		for (ITestResult temp : failedTests) {
-			ITestNGMethod method = temp.getMethod();
-			if (context.getFailedTests().getResults(method).size() > 1) {
-				failedTests.remove(temp);
-			} else {
-				if (context.getPassedTests().getResults(method).size() > 0) {
-					failedTests.remove(temp);
-				}
-			}
-		}
+
+
+
+	private static String getTestMethodName(ITestResult iTestResult) {
+		return iTestResult.getMethod().getConstructorOrMethod().getName();
 	}
 
-	public void onTestStart(ITestResult result) {   }
 
-	public void onTestSuccess(ITestResult result) {   }
-   
 	@Override
-	public void onTestFailure(ITestResult result) { 
-		Object TestListener = result.getInstance();
-		WebDriver webDriver = ((CreateSession) TestListener).getDriver();
-		if (webDriver != null)
-		{
-			File scr = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);		
-			String filename =  new SimpleDateFormat("yyyyMMddhhmmss'.jpg'").format(new Date());
-    			File dest = new File("./Screenshots/" + filename); //Directory where Screenshot get saved.
-   			try 
-			{
-				FileUtils.copyFile(scr, dest);
-			} 
-			catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}	
-		}
-	   }
+	public void onTestStart(ITestResult iTestResult) {
+		System.out.println("on test method " +  getTestMethodName(iTestResult) + " start");
+	}
 
-	public void onTestSkipped(ITestResult result) {   }
+	@Override
+	public void onTestSuccess(ITestResult iTestResult) {
+		System.out.println("I am in onTestSuccess method " + getTestMethodName(iTestResult) + " succeed");
+	}
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {   }
+	@Override
+	public void onTestFailure(ITestResult iTestResult) {
+		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
+//		try {
+//			ExtentReportManager.captureScreenShot();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 
-	public void onStart(ITestContext context) { }
+	}
 
+	@Override
+	public void onTestSkipped(ITestResult iTestResult) {
+		System.out.println("I am in onTestSkipped method " + getTestMethodName(iTestResult) + " skipped");
+
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
+		System.out.println("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
+	}
+
+	@Override
+	public void onStart(ITestContext iTestContext) {
+		System.out.println("I am in onStart method " + iTestContext.getName());
+		extent = ExtentReportManager.report();
+	}
+
+	@Override
+	public void onFinish(ITestContext iTestContext) {
+		extent.flush();
+	}
 }
+
+
+
 
 
 

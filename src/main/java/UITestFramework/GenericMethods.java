@@ -11,11 +11,14 @@ import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
-import logger.Log;
+import Reports.Log;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
@@ -23,7 +26,10 @@ import java.util.Set;
 
 public class GenericMethods {
 
-    WebDriver driver = null;
+
+    private static WebDriver driver = null;
+    private static String screenshotPath;
+
 
     // common timeout for all tests can be set here
     public final int timeOut = 40;
@@ -124,7 +130,7 @@ public class GenericMethods {
             WebElement element = driver.findElement(locator);
             return element;
         } catch (NoSuchElementException e) {
-            Log.error(this.getClass().getName(), "findElement", "Element not found" + locator);
+            Log.error("Element not found" + locator);
             throw e;
         }
     }
@@ -140,7 +146,7 @@ public class GenericMethods {
             List<WebElement> element = driver.findElements(locator);
             return element;
         } catch (NoSuchElementException e) {
-            Log.error(this.getClass().getName(), "findElements", "element not found" + locator);
+            Log.error("element not found" + locator);
             throw e;
         }
     }
@@ -268,7 +274,7 @@ public class GenericMethods {
             touch.longPress(longPressOptions).release().perform();
             Log.info("Long press successful on element: " + element);
         } catch (NoSuchElementException e) {
-            Log.error(this.getClass().getName(), "findElement", "Element not found" + locator);
+            Log.error("Element not found" + locator);
             throw e;
         }
 
@@ -305,7 +311,7 @@ public class GenericMethods {
             touch.longPress(longPressOptions).release().perform();
             Log.info("Long press successful on element: " + element + "on coordinates" + "( " + x + "," + y + " )");
         } catch (NoSuchElementException e) {
-            Log.error(this.getClass().getName(), "findElement", "Element not found" + locator);
+            Log.error("Element not found" + locator);
             throw e;
         }
 
@@ -407,7 +413,6 @@ public class GenericMethods {
                     .release().perform();
         }
     }
-
 
 }
 
