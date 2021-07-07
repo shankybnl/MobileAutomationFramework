@@ -1,9 +1,14 @@
 package UITestFramework.retryLogic;
 
 import Reports.ExtentReportManager;
+import Reports.Log;
 import UITestFramework.CreateSession;
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -13,7 +18,6 @@ import java.io.IOException;
 
 
 public class TestListener extends CreateSession implements ITestListener {
-
 
 
 	private static String getTestMethodName(ITestResult iTestResult) {
@@ -28,18 +32,23 @@ public class TestListener extends CreateSession implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult iTestResult) {
-		System.out.println("I am in onTestSuccess method " + getTestMethodName(iTestResult) + " succeed");
+		String testName = iTestResult.getName();
+		if (iTestResult != null) {
+			Log.pass(testName + " is Passed");
+		}
 	}
 
 	@Override
 	public void onTestFailure(ITestResult iTestResult) {
-		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
+		String testName = iTestResult.getName();
 //		try {
 //			ExtentReportManager.captureScreenShot();
 //		} catch (IOException e) {
 //			e.printStackTrace();
 //		}
-
+		if (iTestResult != null) {
+			Log.fail(testName + " is FAILED...");
+		}
 	}
 
 	@Override

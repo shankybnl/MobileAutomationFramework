@@ -16,10 +16,12 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.Utils;
 
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -49,6 +51,11 @@ public class GenericMethods {
      */
     public Boolean isElementPresent(By targetElement) throws InterruptedException {
         Boolean isPresent = driver.findElements(targetElement).size() > 0;
+        return isPresent;
+    }
+
+    public Boolean isElementDisplayed(By targetElement) throws InterruptedException {
+        Boolean isPresent = driver.findElement(targetElement).isDisplayed();
         return isPresent;
     }
 
@@ -371,6 +378,10 @@ public class GenericMethods {
         ((AppiumDriver) driver).findElementByName(elementByName).click();
     }
 
+    public void click(By locator) {
+        driver.findElement(locator).click();
+    }
+
     /**
      * method to scroll down on screen from java-client 6
      *
@@ -412,6 +423,14 @@ public class GenericMethods {
                     .waitAction(WaitOptions.waitOptions(Duration.ofMillis(durationForSwipe)))
                     .release().perform();
         }
+    }
+
+    public static String Screenshot(String imageName) throws IOException {
+
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            byte[] fileContent = FileUtils.readFileToByteArray(src);
+            String base64Screenshot = "data:image/png;base64," + Base64.getEncoder().encodeToString(fileContent);
+            return base64Screenshot;
     }
 
 }

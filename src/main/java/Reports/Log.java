@@ -37,4 +37,12 @@ public class Log {
 			Log.debug(message);
 		}
 
+		public static void pass (String message) {
+		Log.info(message);
+	}
+
+		public static void fail (String message) {
+		Log.info(message);
+	}
+
 }

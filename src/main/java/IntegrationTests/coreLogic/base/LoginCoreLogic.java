@@ -12,4 +12,10 @@ public abstract class LoginCoreLogic {
 			throws InterruptedException;
 
 
+
+	public abstract void loginScreenScenario() throws InterruptedException;
+
+	public abstract void loginScreenFieldScenario() throws InterruptedException;
+
+
 }

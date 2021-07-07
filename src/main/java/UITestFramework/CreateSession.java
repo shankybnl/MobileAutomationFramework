@@ -87,7 +87,6 @@ public class CreateSession  {
 
 	@AfterTest
 	public void stopAppium() throws Exception {
-		Log.info("Test not passing from here");
 		try{
 			stopAppiumServer(OS);
 			Log.info("Appium server stopped successfully");
@@ -108,7 +107,7 @@ public class CreateSession  {
 	 * @throws Exception issue while loading properties files or creation of driver.
 	 */
 	@Parameters({"os"})
-	@BeforeMethod
+	@BeforeClass
 	public  void createDriver(String os, Method methodName) throws Exception{
 
 		propertiesFileLoad(os);
@@ -138,7 +137,7 @@ public class CreateSession  {
 	/** 
 	 * this method quit the driver after the execution of test(s) 
 	 */
-	@AfterMethod
+	@AfterClass
 	public void teardown(){
 		Log.info("Shutting down driver");
 		driver.quit();
@@ -161,7 +160,7 @@ public class CreateSession  {
 		capabilities.setCapability("appActivity", "xunison.com.smarthomeapp.screen.main.activity.MainActivity");
 		capabilities.setCapability("noReset", "true");
 		capabilities.setCapability("fullReset","false");
-		capabilities.setCapability("name", methodName.getName());
+//		capabilities.setCapability("name", methodName.getName());
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("automationName", "UiAutomator2");
 		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "");
@@ -323,6 +322,7 @@ public class CreateSession  {
 		extent.flush();
 
 	}
+
 
 
 }

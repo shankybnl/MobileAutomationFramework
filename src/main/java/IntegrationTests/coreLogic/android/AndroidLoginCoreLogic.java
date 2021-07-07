@@ -26,6 +26,7 @@ public class AndroidLoginCoreLogic extends LoginCoreLogic {
      * @param userName emailId to be used for login
      * @param password - valid password
      */
+
     @Override
     public void verifyLoginScenario(String userName, String password) throws InterruptedException {
         androidLoginScreen.waitForVisibility(androidLoginScreen.loginViaSlideShare);
@@ -58,6 +59,20 @@ public class AndroidLoginCoreLogic extends LoginCoreLogic {
 
     }
 
+    @Override
+    public void loginScreenScenario() throws InterruptedException {
 
+        androidLoginScreen.waitForVisibility(androidLoginScreen.loginButton);
+        androidLoginScreen.isElementDisplayed(androidLoginScreen.loginButton);
+    }
+
+    @Override
+    public void loginScreenFieldScenario() throws InterruptedException {
+
+        androidLoginScreen.click(androidLoginScreen.loginButton);
+        androidLoginScreen.isElementDisplayed(androidLoginScreen.emailField);
+        androidLoginScreen.isElementDisplayed(androidLoginScreen.passwordField);
+
+    }
 }
 

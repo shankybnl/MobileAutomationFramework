@@ -5,8 +5,9 @@
 	<listener class-name="UITestFramework.retryLogic.TestListener"/> 
 	</listeners>
 	<test name="automation-tests">
-		<packages>
-			<package name="tests.testngTests" />			
-		</packages>
+		<classes>
+			<class name="tests.Login.LoginTest" />
+			<class name="tests.Login.LoginPageField" />
+		</classes>
 	</test>
 </suite>

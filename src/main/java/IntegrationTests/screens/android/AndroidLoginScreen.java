@@ -28,6 +28,9 @@ public class AndroidLoginScreen extends GenericMethods {
 	public By searchIcon = By.id("net.slideshare.mobile:id/action_search");
 	public By titleBar = By.id("net.slideshare.mobile:id/title");
 
+	public By loginButton = By.id("xunison.com.smarthomeapp:id/login_button");
+	public By emailField = By.id("xunison.com.smarthomeapp:id/email_edit_text");
+	public By passwordField = By.id("xunison.com.smarthomeapp:id/password_edit_text");
 
 
 	

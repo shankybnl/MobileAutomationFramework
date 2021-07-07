@@ -41,7 +41,16 @@ public class IOSLoginCoreLogic extends LoginCoreLogic{
 		Log.info("Login verified for iOS app");*/
 	}
 
-	
+	@Override
+	public void loginScreenScenario() throws InterruptedException {
+
+	}
+
+	@Override
+	public void loginScreenFieldScenario() throws InterruptedException {
+
+	}
+
 
 }
 

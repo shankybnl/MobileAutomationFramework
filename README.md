@@ -96,7 +96,7 @@ where abstract method declared in base class are defined.Corresponding base core
 ![image](UIAutomation/images/9.png)
 
 
-**Package: tests.testngTests** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
+**Package: tests.Login** :  This package contains all the tests. In each test there is instantiateHelpers(String invokeDriver) method which creates the object at 
 runtime of the coreLogic classes required in the test. Object creation happens depending on the platform passed through invokeDriver parameter (android or ios). Then test calls methods defined in the coreLogic (of which object is created).
 
 
