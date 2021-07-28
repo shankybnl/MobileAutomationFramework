@@ -39,7 +39,7 @@ import org.testng.annotations.*;
  */
 public class CreateSession  {
 
-	public WebDriver driver = null;
+	public WebDriver driver;
 	Properties configFile ;
 	protected static Properties lobConfigProp = new Properties();
 	protected static Properties localeConfigProp = new Properties();
@@ -54,10 +54,8 @@ public class CreateSession  {
 	 * Returns the instance of the webdriver. 
 	 * @return webdriver instance 
 	 */
-	public WebDriver getDriver() {
-        return driver;
-}
-	
+
+
 
 	/** 
 	 * this method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
@@ -222,19 +220,19 @@ public class CreateSession  {
 
 		}
 		else if (os.contains("mac os x")){
-			CommandLine command = new CommandLine("/Applications/Appium.app/Contents/Resources/node/bin/node");  
-			command.addArgument("/Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js", false);  
-			command.addArgument("--address", false);  
-			command.addArgument("127.0.0.1");  
-			command.addArgument("--port", false);  
-			command.addArgument("4723");  
-			command.addArgument("--full-reset", false);  
-			DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();  
-			DefaultExecutor executor = new DefaultExecutor();  
-			executor.setExitValue(1);  
-			executor.execute(command, resultHandler);  
-			Thread.sleep(5000);  
+			String appiumJSPath = "/Users/mac/.npm/lib/node_modules/appium/build/lib/main.js";
+			builder = new AppiumServiceBuilder()
+					.withAppiumJS(new File(appiumJSPath))
+//                .usingDriverExecutable(new File(Appium_Node_Path))
+					.withIPAddress("0.0.0.0")
+					.usingAnyFreePort()
+					.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+					.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
+			appiumService = builder.build();
+			appiumService.start();
+			Log.info("Appium started on " + appiumService.getUrl());
 		}
+
 		else if (os.contains("linux")){
 			//Start the appium server
 			System.out.println("ANDROID_HOME : ");
