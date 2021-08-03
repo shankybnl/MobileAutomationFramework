@@ -204,11 +204,7 @@ public class CreateSession  {
 		private static AppiumServiceBuilder builder;
 	public void startAppiumServer(String os) throws ExecuteException, IOException, InterruptedException{
 		if (os.contains("windows")){
-			String appiumJSPath = "/Users/HP/AppData/Roaming/npm/node_modules/appium/build/lib/main.js";
 			 builder = new AppiumServiceBuilder()
-					.withAppiumJS(new File(appiumJSPath))
-//                .usingDriverExecutable(new File(Appium_Node_Path))
-					.withIPAddress("0.0.0.0")
 					.usingAnyFreePort()
 					.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
 					.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
@@ -220,11 +216,7 @@ public class CreateSession  {
 
 		}
 		else if (os.contains("mac os x")){
-			String appiumJSPath = "/Users/mac/.npm/lib/node_modules/appium/build/lib/main.js";
 			builder = new AppiumServiceBuilder()
-					.withAppiumJS(new File(appiumJSPath))
-//                .usingDriverExecutable(new File(Appium_Node_Path))
-					.withIPAddress("0.0.0.0")
 					.usingAnyFreePort()
 					.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
 					.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
