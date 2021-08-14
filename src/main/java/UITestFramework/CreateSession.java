@@ -3,31 +3,25 @@ package UITestFramework;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Properties;
-
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import logger.Log;
-
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.util.Properties;
 
 /**
  * contains all the methods to create a new session and destroy the 
@@ -46,18 +40,13 @@ public class CreateSession  {
 	protected File file = new File("");
 	Properties configProp = new Properties();
 	String OS;
-	/** 
-	 * Returns the instance of the webdriver. 
-	 * @return webdriver instance 
-	 */
-
 
 
 	/** 
 	 * this method starts Appium server. Calls startAppiumServer method to start the session depending upon your OS.
 	 * @throws Exception Unable to start appium server
 	 */
-	//@BeforeSuite
+	@BeforeSuite
 	public void invokeAppium() throws Exception
 	{
 		String OS = System.getProperty("os.name").toLowerCase();
@@ -76,7 +65,7 @@ public class CreateSession  {
 	 * stop session depending upon your OS.
 	 * @throws Exception Unable to stop appium server
 	 */
-	//@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void stopAppium() throws Exception {
 		try{
 			stopAppiumServer(OS);
@@ -148,9 +137,11 @@ public class CreateSession  {
 		capabilities.setCapability("appActivity", "net.slideshare.mobile.ui.SplashActivity");
 		capabilities.setCapability("name", methodName.getName());
 		capabilities.setCapability("app", app.getAbsolutePath());
-		capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
+		// added "MobileCapabilityType.FULL_RESET" capability to start app in fresh state (logout).
+		// Remove it if not required
+		capabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
 		capabilities.setCapability("automationName", "UiAutomator2");
-		driver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver( appiumService.getUrl(), capabilities);
 
 	}
 
@@ -169,7 +160,7 @@ public class CreateSession  {
 		capabilities.setCapability("name", methodName.getName());
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"iPhone 5s"); 
 		capabilities.setCapability("app", app.getAbsolutePath());
-		driver  = new IOSDriver( new URL("http://localhost:4723/wd/hub"), capabilities);
+		driver  = new IOSDriver( appiumService.getUrl(), capabilities);
 
 	}
 
@@ -184,36 +175,22 @@ public class CreateSession  {
 	 * or otherwise occupied, and the thread is interrupted, either before
 	 *  or during the activity.
 	 */
-	public void startAppiumServer(String os) throws ExecuteException, IOException, InterruptedException{
+	private static AppiumDriverLocalService appiumService;
+		private static AppiumServiceBuilder builder;
+	public void startAppiumServer(String os) throws IOException, InterruptedException{
 		if (os.contains("windows")){
-			CommandLine command = new CommandLine("cmd");  
-			command.addArgument("/c");  
-			command.addArgument("C:/Program Files/nodejs/node.exe");  
-			command.addArgument("C:/Appium/node_modules/appium/bin/appium.js");  
-			command.addArgument("--address", false);  
-			command.addArgument("127.0.0.1");  
-			command.addArgument("--port", false);  
-			command.addArgument("4723");  
-			command.addArgument("--full-reset", false);  
-
-			DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();  
-			DefaultExecutor executor = new DefaultExecutor();  
-			executor.setExitValue(1);  
-			executor.execute(command, resultHandler);  
-			Thread.sleep(5000);  
-		}
-		else if (os.contains("mac os x")){
-			String appiumJSPath = "/Users/mac/.npm/lib/node_modules/appium/build/lib/main.js";
-			builder = new AppiumServiceBuilder()
-					.withAppiumJS(new File(appiumJSPath))
-//                .usingDriverExecutable(new File(Appium_Node_Path))
-					.withIPAddress("0.0.0.0")
+			 builder = new AppiumServiceBuilder()
 					.usingAnyFreePort()
 					.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
 					.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
 			appiumService = builder.build();
 			appiumService.start();
-			Log.info("Appium started on " + appiumService.getUrl());
+		}
+		else if (os.contains("mac os x")){
+			builder = new AppiumServiceBuilder()
+					.usingAnyFreePort()
+					.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+					.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
 		}
 
 		else if (os.contains("linux")){
@@ -235,6 +212,10 @@ public class CreateSession  {
 		else{
 			Log.info(os + "is not supported yet");
 		}
+
+		appiumService = builder.build();
+		appiumService.start();
+		Log.info("Appium started on " + appiumService.getUrl());
 	}
 
 	/** 
@@ -244,24 +225,12 @@ public class CreateSession  {
 	 * @throws ExecuteException An exception indicating that the executing a subprocesses failed.
 	 */
 	public void stopAppiumServer(String os) throws ExecuteException, IOException {
-		if (os.contains("windows")){
-			CommandLine command = new CommandLine("cmd");  
-			command.addArgument("/c");  
-			command.addArgument("Taskkill /F /IM node.exe");  
-
-			DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();  
-			DefaultExecutor executor = new DefaultExecutor();  
-			executor.setExitValue(1);  
-			executor.execute(command, resultHandler);  
-		}
-		else if (os.contains("mac os x")){
-			String[] command ={"/usr/bin/killall","-KILL","node"};  
-			Runtime.getRuntime().exec(command);  
-			Log.info("Appium server stopped");  
-		}
-		else if (os.contains("linux")){
-			// need to add it
-		}
+			if (appiumService != null) {
+				appiumService.stop();
+				Log.info("Appium server stopped");
+			} else {
+				Log.logError(getClass().getName(), getClass().getEnclosingMethod().getName(),"Appium server fail to stopped");
+			}
 	}
 
 	/** 
@@ -276,6 +245,7 @@ public class CreateSession  {
 
 		File f = new File(file.getAbsoluteFile() + "//src//main//java//config//" + platform
 				+ "_config.properties");
+
 
 		if (f.exists() && !f.isDirectory()) {
 			lobConfigFis = new FileInputStream(file.getAbsoluteFile()
@@ -304,6 +274,14 @@ public class CreateSession  {
 		}
 
 		return appPath;
+	}
+
+	/**
+	 * Returns the instance of the webdriver.
+	 * @return webdriver instance
+	 */
+	public WebDriver getDriver() {
+		return driver;
 	}
 
 
