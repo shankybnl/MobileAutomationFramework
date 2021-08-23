@@ -155,7 +155,7 @@ IOSLoginCoreLogic would be under iOS -> IOSLoginCoreLogic.
 Similar thing should be done for element locators. There is no base folder in case of screens.For android locators, it would be under screens->android->AndroidLoginScreen. 
 For iOS locators,  it would be under screens->ios->IOSLoginScreen. 
 
-##### How to execute a test
+### How to execute a test
 
 Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
 
@@ -205,7 +205,7 @@ $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
 
 **CreateSessionCucumber.java** : Similar to [Create session class](**CreateSession.java) to create driver object and loading test data etc.
 
-##### How to execute a test
+### How to execute a test
 
 Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
 
