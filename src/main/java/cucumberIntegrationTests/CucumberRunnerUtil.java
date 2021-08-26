@@ -2,11 +2,11 @@ package cucumberIntegrationTests;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import org.junit.runner.RunWith;
 import org.testng.annotations.*;
+
 import java.lang.reflect.Method;
 
 

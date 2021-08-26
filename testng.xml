@@ -2,7 +2,9 @@
 <suite name="mobile-automation-framework">
 	<parameter name="os" value="${os}" />
 	<listeners>
-	<listener class-name="UITestFramework.retryLogic.TestListener"/> 
+	<listener class-name="UITestFramework.retryLogic.TestListener"/>
+	<!-- uncomment RetryListener to enable retries. update the maxRetryCount value in the Retry class-->
+	<!--<listener class-name="UITestFramework.retryLogic.RetryListener"/>-->
 	</listeners>
 	<test name="automation-tests">
 		<packages>
