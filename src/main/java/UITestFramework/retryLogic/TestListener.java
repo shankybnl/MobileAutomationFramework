@@ -22,8 +22,8 @@ import com.aventstack.extentreports.Status;
 
 public class TestListener extends CreateSession implements ITestListener {
 	
-	ExtentReports extent =ExtentReportR.extentReportGenerator();
-    ExtentTest test;
+	ExtentReports extent =ExtentReportSetup.extentReportGenerator();
+    	ExtentTest test;
 	
 	public void onFinish(ITestContext context) {
 		Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
