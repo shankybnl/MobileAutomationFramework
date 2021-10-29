@@ -16,6 +16,9 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import UITestFramework.CreateSession;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 public class TestListener extends CreateSession implements ITestListener {
 	
@@ -74,6 +77,3 @@ public class TestListener extends CreateSession implements ITestListener {
 	public void onStart(ITestContext context) { }
 
 }
-
-
-
