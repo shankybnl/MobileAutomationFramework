@@ -1,12 +1,11 @@
 package UITestFramework.retryLogic;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Set;
-
+import UITestFramework.CreateSession;
+import UITestFramework.ExtentReportConfig;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,14 +14,16 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
-import UITestFramework.CreateSession;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Set;
 
 public class TestListener extends CreateSession implements ITestListener {
 	
-	ExtentReports extent =ExtentReportSetup.extentReportGenerator();
+	ExtentReports extent = ExtentReportConfig.extentReportGenerator();
     	ExtentTest test;
 	
 	public void onFinish(ITestContext context) {
@@ -46,7 +47,7 @@ public class TestListener extends CreateSession implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {   
-		test.log(Status.PASS, "Successfull");
+		test.log(Status.PASS, "No Issues encountered!");
 	}
    
 	@Override
