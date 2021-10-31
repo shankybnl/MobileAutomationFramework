@@ -16,9 +16,14 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import UITestFramework.CreateSession;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 public class TestListener extends CreateSession implements ITestListener {
 	
+	ExtentReports extent =ExtentReportSetup.extentReportGenerator();
+    	ExtentTest test;
 	
 	public void onFinish(ITestContext context) {
 		Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
@@ -32,11 +37,17 @@ public class TestListener extends CreateSession implements ITestListener {
 				}
 			}
 		}
+		extent.flush();
 	}
 
-	public void onTestStart(ITestResult result) {   }
+	public void onTestStart(ITestResult result) {  
+		test= extent.createTest(result.getMethod().getMethodName());
 
-	public void onTestSuccess(ITestResult result) {   }
+	}
+
+	public void onTestSuccess(ITestResult result) {   
+		test.log(Status.PASS, "Successfull");
+	}
    
 	@Override
 	public void onTestFailure(ITestResult result) { 
@@ -56,6 +67,7 @@ public class TestListener extends CreateSession implements ITestListener {
 				e.printStackTrace();
 			}	
 		}
+		test.fail(result.getThrowable()); 
 	   }
 
 	public void onTestSkipped(ITestResult result) {   }
@@ -65,6 +77,3 @@ public class TestListener extends CreateSession implements ITestListener {
 	public void onStart(ITestContext context) { }
 
 }
-
-
-
