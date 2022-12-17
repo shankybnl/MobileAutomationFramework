@@ -7,7 +7,11 @@ Cheers!
 
 *Single code base framework to test android and iOS app using appium. It is a boilerplate code. Clone it and you are good to go!*
 
+## Prequisites:
 
+- Appium server installed on the machine. In case not, install it by running command `npm install -g appium`. For more details visit: https://appium.io/docs/en/about-appium/getting-started/?lang=en
+
+- iOS Simulator or Android Emulator or real device to execute tests.
 
 ## Framework with testng tests setup and execution ([cucumber BDD tests here](#cucumber-bdd-tests))
 
