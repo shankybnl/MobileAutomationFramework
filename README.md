@@ -13,7 +13,29 @@ Cheers!
 
 - iOS Simulator or Android Emulator or real device to execute tests.
 
+- Install Maven in your machine. Maven is a build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
+
 ## Framework with testng tests setup and execution ([cucumber BDD tests here](#cucumber-bdd-tests))
+
+### Running sample test
+
+1. Connect your device to your machine or start the emulator.
+
+*Note: start appium server on your machine if not included programatically*
+
+###### Run below commands to execute android testng test:
+
+$ cd mobileautomationframework/
+$ mvn test -Dos=android -Dsurefire.suiteXmlFiles=testng.xml
+
+*Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
+
+###### Run below commands to execute iOS testng test:
+
+$ cd mobileautomationframework/
+$ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
+
+### Architecture Overview
 
 **Package : UITestFramework** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
@@ -108,7 +130,7 @@ runtime of the coreLogic classes required in the test. Object creation happens d
 ### Javadoc of the project can be found in doc folder. It contains information all classes and methods.
 
 
-## Execution flow of test test
+## Test Execution flow
 
 Below is execution flow with help of login test as example.
 
@@ -159,25 +181,6 @@ IOSLoginCoreLogic would be under iOS -> IOSLoginCoreLogic.
 Similar thing should be done for element locators. There is no base folder in case of screens.For android locators, it would be under screens->android->AndroidLoginScreen. 
 For iOS locators,  it would be under screens->ios->IOSLoginScreen. 
 
-### How to execute a test
-
-Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
-
-Connect your device to your machine or start the emulator.
-
-*Note: start appium server on your machine if not included programatically*
-
-###### Run below commands to execute android testng test:
-
-$ cd mobileautomationframework/
-$ mvn test -Dos=android -Dsurefire.suiteXmlFiles=testng.xml
-
-*Include iOS app on which you want to run test. Provide its path in config.xml file (iOSAppPath=src/app/path-to-your-iOSfile). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
-
-###### Run below commands to execute iOS testng test:
-
-$ cd mobileautomationframework/
-$ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
 
                                             xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
