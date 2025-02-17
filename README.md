@@ -37,6 +37,10 @@ $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
 
 ### Architecture Overview
 
+![image](UIAutomation/images/Core_Architecture.png)
+*Credit: [entelligence.ai](https://www.entelligence.ai/documentation/shankybnl&MobileAutomationFramework/)*
+
+
 **Package : UITestFramework** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
 ![image](UIAutomation/images/1.png)
